@@ -38,8 +38,11 @@
 
   <meta name="author" content="<%- config.author %>">
 
-  <% if (is_post()) { %>
+  <% if (is_post() || is_page()) { %>
   <meta property="og:image" content="<%-config.url + "/" + page.thumbnail %>">
+  <% } %>
+  <% if (is_home() || is_archive) { %>
+  <meta property="og:image" content="<%-config.url + theme.favicon %>">
   <% } %>
 
   <meta property="og:site_name" content="<%= config.title %>" />
@@ -66,6 +69,9 @@
 
   <% if (is_post() || is_page()) { %>
   <meta name="twitter:image" content="<%-config.url + "/" + page.thumbnail %>">
+  <% } %>
+  <% if (is_home() || is_archive) { %>
+  <meta name="twitter:image" content="<%-config.url + theme.favicon %>">
   <% } %>
   <meta name="twitter:url" content="<%= url %>" />
 
