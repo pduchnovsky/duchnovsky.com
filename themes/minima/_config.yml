@@ -1,0 +1,39 @@
+#title in header
+title: "Hello World (:"
+
+#main info
+#owner
+owner: "I am Peter Duchnovsky"
+email: "peter@duchnovsky.sk"
+info: "An IT Professional with 12+ years of experience mostly in cloud computing area, now working as DevOps Engineer and thoroughly enjoying new challenges in CI/CD area !"
+info2: "I am also huge nerd in to <everything> computers and at last but not least an hobby photographer with 9 years of experience."
+#description
+desc: "This is my blog / portfolio where I'll share some insights, guides and some other stuff I might find worth sharing 😁"
+#menu
+menu:
+  photography: /photography
+
+#index/main page max show posts (in number)
+max_post: 4
+
+# social profile at the footer/bottom
+place: https://google.com/search?q=slovakia
+github: https://github.com/pduchnovsky
+instagram: https://instagram.com/pduchnovsky
+linkedin: https://linkedin.com/in/pduchnovsky
+
+# js
+nanobar: /js/nanobar.min.js
+
+# favicon
+favicon: /images/favicon.png
+
+article:
+  thumbnail: true
+
+# DISQUS comments (sign up to Disqus to get disqus_shortname)
+disqus_enabled: true
+disqus_shortname: duchnovsky
+
+# Google Analytics
+google_analytics: UA-145853928-1
