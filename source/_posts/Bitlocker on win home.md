@@ -1,17 +1,23 @@
 ---
-title: How to enable BitLocker system drive encryption on Windows 10 Home
+title: BitLocker system drive encryption on Windows 10 Home
 date: 2020-10-02
 thumbnail: thumbnail/bitlocker.jpg
+tags:
+- guide
+- bitlocker
+- manage-bde
+- windows 10 home
+- workaround
 ---
-'Officially' Windows 10 Home does not support BitLocker GUI and that's *fine*, they *probably* don't want home users to lose access to their data..<br>
-...however, if you manage small business IT infrastructure you must find a way on how to protect company data even on devices that come with Windows 10 Home.
+'Officially' Windows 10 Home does not support BitLocker GUI and that's *fine*, they *probably* don't want home users to lose access to their data..<br>...however, if you manage small business IT infrastructure you must find a way on how to protect company data even on devices that come with Windows 10 Home.
 
-So here we go..
+So here we go.. :)
 
 **Prerequisites**
 
 - Disk with GPT (GUID Partition Table)
 - Dedicated TPM module (v1.2+) or enabled Intel PTT in BIOS (not sure if AMD has such alternative)
+
 Now how to check this ?
 
 (Run all commands from now on in cmd.exe as admin)

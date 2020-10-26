@@ -47,14 +47,14 @@ img {
 
 img[alt$=">"] {
   float: right;
-  max-width: 49%;
-  margin-bottom: 17px;
+  max-width: 49.5%;
+  margin-bottom: 1%;
 }
 
 img[alt$="<"] {
   float: left;
-  max-width: 49%;
-  margin-bottom: 17px;
+  max-width: 49.5%;
+  margin-bottom: 1%;
 }
 
 img[alt$="><"] {
