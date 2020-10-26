@@ -64,7 +64,7 @@
   <meta name="twitter:description" content="<%= config.description %>">
   <% } %>
 
-  <% if (is_post()) { %>
+  <% if (is_post() || is_page()) { %>
   <meta name="twitter:image" content="<%-config.url + "/" + page.thumbnail %>">
   <% } %>
   <meta name="twitter:url" content="<%= url %>" />
