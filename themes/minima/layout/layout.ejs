@@ -71,7 +71,7 @@
   <% } %>
 
   <% if (is_post() || is_page()) { %>
-  <meta name="twitter:image" content="<%-config.url + "/" + page.thumbnail %>">
+  <meta name="twitter:image" content="<%-config.url + page.thumbnail %>">
   <% } %>
   <% if (is_home() || is_archive) { %>
   <meta name="twitter:image" content="<%-config.url + theme.favicon %>">
@@ -124,7 +124,7 @@
     </div>
 
   </div>
-  <script src="<%- config.root + theme.nanobar %>"></script>
+  <script src="<%- config.url + theme.nanobar %>"></script>
   <script>
     var options = {
       classname: 'nanobar',

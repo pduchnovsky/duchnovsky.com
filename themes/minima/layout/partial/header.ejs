@@ -33,11 +33,16 @@
 
 <script >
 
+  if (localStorage.getItem('clickme') == 'hide') {
+    document.getElementsByClassName('clickme')[0].style.visibility = 'hidden'
+  } 
+
   if (localStorage.getItem('preferredTheme') == 'dark') {
     setDarkMode(true)
   }
 
   function setDarkMode(isDark) {
+    localStorage.setItem('clickme', 'hide');
     var darkBtn = document.getElementById('darkBtn')
     var lightBtn = document.getElementById('lightBtn')
     if (isDark) {
