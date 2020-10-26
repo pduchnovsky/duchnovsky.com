@@ -289,7 +289,7 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
+a:not(.image) {
   color: inherit;
   text-decoration-color: #5f5f5f;
   background-size: 100% 200%;
@@ -299,10 +299,17 @@ a {
     color .2s ease-in-out;
 }
 
-a:hover,
-a:focus {
+a:hover:not(.image),
+a:focus:not(.image) {
   background-position: 0 100%;
   color: #fff;
+}
+
+a.image {
+  fill: rgb(75, 75, 75);
+}
+a.image:hover {
+  fill: rgb(185, 185, 185);
 }
 
 /* a:hover {
