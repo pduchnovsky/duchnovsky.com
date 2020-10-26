@@ -96,7 +96,15 @@ exclude:
 ignore:
 
 # Extensions
+sitemap:
+  path: sitemap.xml
+  template: ./sitemap_template.xml
+  rel: false
+  tags: true
+  categories: true
 ## Plugins: https://hexo.io/plugins/
+plugins:
+- hexo-generator-cname
 ## Themes: https://hexo.io/themes/
 theme: minima
 
@@ -105,4 +113,3 @@ theme: minima
 deploy:
   type: 'git'
   repo: https://github.com/pduchnovsky/duchnovsky.github.io
-  branch: main
