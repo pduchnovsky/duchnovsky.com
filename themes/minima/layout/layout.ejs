@@ -39,7 +39,7 @@
   <meta name="author" content="<%- config.author %>">
 
   <% if (is_post()) { %>
-  <meta property="og:image" content="<%-config.url + "/" + page.path + page.thumbnail %>">
+  <meta property="og:image" content="<%-config.url + "/" + page.thumbnail %>">
   <% } %>
 
   <meta property="og:site_name" content="<%= config.title %>" />
@@ -65,7 +65,7 @@
   <% } %>
 
   <% if (is_post()) { %>
-  <meta name="twitter:image" content="<%-config.url + "/" + page.path + page.thumbnail %>">
+  <meta name="twitter:image" content="<%-config.url + "/" + page.thumbnail %>">
   <% } %>
   <meta name="twitter:url" content="<%= url %>" />
 
