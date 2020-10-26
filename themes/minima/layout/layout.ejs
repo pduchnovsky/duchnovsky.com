@@ -35,6 +35,9 @@
   <% } else { %>
   <meta name="description" content="<%= config.description %>">
   <% } %>
+  <% if (config.keywords) { %>
+  <meta name="keywords" content="<%= config.keywords %>">
+  <% } %>
 
   <meta name="author" content="<%- config.author %>">
 
