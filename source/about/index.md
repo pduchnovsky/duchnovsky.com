@@ -1,5 +1,5 @@
 ---
-title: about
+title: about me
 date: false
 thumbnail:
 ---

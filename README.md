@@ -7,6 +7,7 @@ Install Hexo
     npm i -s hexo-asset-link
     npm i -s hexo-generator-cname
     npm i -s hexo-generator-sitemap
+    npm i -s hexo-canonical-link
 
 Clone minima theme
 

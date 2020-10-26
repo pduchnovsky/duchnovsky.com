@@ -69,6 +69,10 @@
   <% } %>
   <meta name="twitter:url" content="<%= url %>" />
 
+  <!-- Canonical link for pages
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <%- canonicalLink(config, page) %>
+
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -91,7 +95,8 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="<%- theme.favicon %>">
 
-  <!-- Google Analytics -->
+  <!-- Google Analytics
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <%- partial('partial/google-analytics') %>
 </head>
 

@@ -1,7 +1,7 @@
 ---
 title: photography portfolio
 date: false
-thumbnail: thumb.jpg
+thumbnail: DSC01515.jpg
 ---
 
 <H5>Macro</H5>
