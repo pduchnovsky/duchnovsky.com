@@ -17,10 +17,10 @@ menu:
 max_post: 4
 
 # social profile at the footer/bottom
-place: https://www.google.com/search?q=slovakia
+place: https://google.com/search?q=slovakia
 github: https://github.com/pduchnovsky
-instagram: https://www.instagram.com/pduchnovsky
-linkedin: https://www.linkedin.com/in/pduchnovsky
+instagram: https://instagram.com/pduchnovsky
+linkedin: https://linkedin.com/in/pduchnovsky
 
 # js
 nanobar: /js/nanobar.min.js
