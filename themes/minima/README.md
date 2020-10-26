@@ -25,10 +25,11 @@ Minima uses vanilla JavaScript, vanilla CSS, and [EJS](https://ejs.co/). So it w
 - Fully responsive design
 - Support post, page, tags, archives, and pagination
 - SEO: post meta description and images (appears in Facebook/Twitter shared-link)
-- Dark/light mode instant switch 🌚/🌝
+- Dark/light mode instant switch 🌚/🌝(With initial 'reminder' ;))
 - Code highlighting with [Prism.js](https://prismjs.com/)
 - [Disqus](https://disqus.com/) for post comments
 - Show comments section button for faster posts loading
+- Google Analytics
 
 ## Documentation
 See the quick start instruction and [documentation here](https://adisaktijrs.github.io/2020/10/11/Hexo-Minima-Theme-v1-0-Officially-Released/#Documentation)

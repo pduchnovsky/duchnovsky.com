@@ -3,12 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: (p)duchnovsky.sk | a drop in the ocean
-description: 'Small programming, system administration, photography blog & portfolio'
+title: pduchnovsky | a drop in the ocean
+description: 'Programming, System Administration & Photography Blog & Portfolio'
 keywords: programming system administration photography portfolio sysadmin devops engineer
 author: Peter Duchnovsky
 language: en
-timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
@@ -80,6 +79,7 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
+
 ## updated_option supports 'mtime', 'date', 'empty'
 updated_option: 'mtime'
 
@@ -96,14 +96,16 @@ ignore:
 
 # Extensions
 sitemap:
-  path: sitemap.xml
+  path: /sitemap.xml
   template: ./sitemap_template.xml
-  rel: false
+  rel: true
   tags: true
   categories: true
+
 ## Plugins: https://hexo.io/plugins/
 plugins:
 - hexo-generator-cname
+
 ## Themes: https://hexo.io/themes/
 theme: minima
 

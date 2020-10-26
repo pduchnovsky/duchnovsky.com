@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <!-- Minima -->
   <!-- Hexo theme created by @adisaktijrs -->
-  <!-- Edited by @pduchnovsky -->
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Hexo theme adapted by @pduchnovsky -->
   <meta charset="utf-8">
-
   <%
   if (!config.author) {
     config.author = ""
   }
-
   var title = title = config.title;
   if (is_archive()){
     title = 'All Posts - ' + config.author;
@@ -28,7 +21,9 @@
   }
   %>
   <title><%= title %></title>
-
+  <% if (config.sitemap.rel) { %>
+  <link rel="sitemap" href="<%-config.url + config.sitemap.path %>" />
+  <% } %>
   <% if (is_page()){ %>
   <meta name="description" content="<%= page.description %>">
   <% } else if (page.content){ %>
@@ -39,16 +34,13 @@
   <% if (config.keywords) { %>
   <meta name="keywords" content="<%= config.keywords %>">
   <% } %>
-
   <meta name="author" content="<%- config.author %>">
-
   <% if (is_post() || is_page()) { %>
   <meta property="og:image" content="<%-config.url + "/" + page.thumbnail %>">
   <% } %>
   <% if (is_home() || is_archive) { %>
   <meta property="og:image" content="<%-config.url + theme.favicon %>">
   <% } %>
-
   <meta property="og:site_name" content="<%= config.title %>" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="<%= title %>" />
@@ -60,7 +52,6 @@
   <meta property="og:description" content="<%= config.description %>">
   <% } %>
   <meta property="og:url" content="<%= url %>" />
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<%= title %>">
   <% if (is_page()){ %>
@@ -70,7 +61,6 @@
   <% } else { %>
   <meta name="twitter:description" content="<%= config.description %>">
   <% } %>
-
   <% if (is_post() || is_page()) { %>
   <meta name="twitter:image" content="<%-config.url + page.thumbnail %>">
   <% } %>
@@ -78,35 +68,16 @@
   <meta name="twitter:image" content="<%-config.url + theme.favicon %>">
   <% } %>
   <meta name="twitter:url" content="<%= url %>" />
-
-  <!-- Canonical link for pages
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <%- canonicalLink(config, page) %>
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <%- css('css/normalize.css') %>
   <%- css('css/skeleton.css') %>
   <%- css('css/custom.css') %>
   <%- css('css/prism-dark.css') %>
   <%- css('css/prism-line-numbers.css') %>
-
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="<%- theme.favicon %>">
-
-  <!-- Google Analytics
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <%- partial('partial/google-analytics') %>
 </head>
 
