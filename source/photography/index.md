@@ -1,6 +1,5 @@
 ---
 title: photography portfolio
-date: {{ date }}
 thumbnail: thumbnail/photography.jpg
 ---
 

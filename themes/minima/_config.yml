@@ -4,14 +4,14 @@ title: "Hello World (:"
 #main info
 #owner
 owner: "I am Peter Duchnovsky"
-info: "A DevOps Engineer and a huge nerd in to <everything> computers"
+email: "peter@duchnovsky.sk"
+info: "An IT Professional with 12+ years of experience mostly in cloud computing area, now working as DevOps Engineer and thoroughly enjoying new challenges in CI/CD area !"
+info2: "I am also huge nerd in to <everything> computers and at last but not least an hobby photographer with 9 years of experience."
 #description
-desc: "This is my portfolio / blog where I'll share some insights, guides and some other stuff I might find worth sharing 😁"
-
+desc: "This is my blog / portfolio where I'll share some insights, guides and some other stuff I might find worth sharing 😁"
 #menu
 menu:
   photography: /photography
-  about: /about
 
 #index/main page max show posts (in number)
 max_post: 4
