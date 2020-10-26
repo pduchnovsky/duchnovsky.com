@@ -1,7 +1,7 @@
 ---
 title: about me
-date: false
-thumbnail:
+date: {{ date }}
+thumbnail: thumbnail/aboutme.jpg
 ---
 <H5>Who am I ?</H5>
 One day, this section will contain some more information about me ;)
