@@ -29,6 +29,9 @@ nanobar: /js/nanobar.min.js
 # favicon
 favicon: /images/favicon.png
 
+# main page thumbnail
+mainthumb: /images/thumbnail.jpg
+
 article:
   thumbnail: true
 
