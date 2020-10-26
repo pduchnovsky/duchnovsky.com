@@ -12,6 +12,14 @@ body {
   overflow-x: hidden;
 }
 
+.clickme {
+  opacity: 0.996;
+  fill: rgb(34, 34, 38);
+  position: absolute;
+  left: 20px;
+  top: -20px;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
