@@ -34,17 +34,18 @@
 <script >
 
   if (localStorage.getItem('clickme') == 'hide') {
-    document.getElementsByClassName('clickme')[0].style.visibility = 'hidden'
+    document.getElementsByClassName('clickme')[0].style.visibility = 'hidden';
   } 
 
   if (localStorage.getItem('preferredTheme') == 'dark') {
-    setDarkMode(true)
+    setDarkMode(true);
   }
 
   function setDarkMode(isDark) {
+    document.getElementsByClassName('clickme')[0].style.visibility = 'hidden';
     localStorage.setItem('clickme', 'hide');
-    var darkBtn = document.getElementById('darkBtn')
-    var lightBtn = document.getElementById('lightBtn')
+    var darkBtn = document.getElementById('darkBtn');
+    var lightBtn = document.getElementById('lightBtn');
     if (isDark) {
       lightBtn.style.display = "block"
       darkBtn.style.display = "none"
