@@ -16,8 +16,8 @@ body {
   opacity: 0.996;
   fill: rgb(34, 34, 38);
   position: absolute;
-  left: 20px;
-  top: -20px;
+  margin-left: 18px;
+  margin-top: -18px;
 }
 
 ::-webkit-scrollbar {
@@ -130,7 +130,7 @@ img[alt$="><"] {
 }
 
 .mode {
-  position: absolute;
+  margin-left: 2%;
   display: block;
   cursor: pointer;
 }
