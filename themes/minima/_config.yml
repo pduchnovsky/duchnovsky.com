@@ -30,7 +30,7 @@ nanobar: /js/nanobar.min.js
 favicon: /images/favicon.png
 
 # main page thumbnail
-mainthumb: /images/thumbnail.jpg
+mainthumb: /images/thumb.jpg
 
 article:
   thumbnail: true
