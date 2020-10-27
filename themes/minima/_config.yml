@@ -20,8 +20,9 @@ max_post: 4
 place: https://google.com/search?q=slovakia
 placename: Slovakia
 github: https://github.com/pduchnovsky
-instagram: https://instagram.com/pduchnovsky
 linkedin: https://linkedin.com/in/pduchnovsky
+twitter: https://twitter.com/pduchnovsky
+instagram: https://instagram.com/pduchnovsky
 
 # js
 nanobar: /js/nanobar.min.js
