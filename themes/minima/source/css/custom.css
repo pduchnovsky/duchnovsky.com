@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+.header {
+  float: left;
+}
+
 .clickme {
   opacity: 0.996;
   fill: rgb(34, 34, 38);
@@ -20,23 +24,10 @@ body {
   margin-top: -18px;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
-  background: rgb(128 128 128 / 80%); 
-}
-::-webkit-scrollbar-thumb:window-inactive {
-background: rgb(255 255 255); 
+.mode {
+  margin-left: 10px;
+  display: block;
+  cursor: pointer;
 }
 
 img {
@@ -64,6 +55,25 @@ img[alt$="><"] {
   height: auto;
   margin: auto;
   float: none!important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: rgb(128 128 128 / 80%); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: rgb(255 255 255); 
 }
 
 .center {
@@ -127,12 +137,6 @@ img[alt$="><"] {
 
 .mx-auto {
   margin: auto;
-}
-
-.mode {
-  margin-left: 2%;
-  display: block;
-  cursor: pointer;
 }
 
 .text-center {
