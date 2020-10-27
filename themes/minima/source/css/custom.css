@@ -91,10 +91,6 @@ img[alt$="><"] {
   margin-left: 2rem;
 }
 
-.ml-1 {
-  margin-left: 4.5rem;
-}
-
 .bottom {
   margin-block-start: 0px;
   margin-block-end: 0px;
