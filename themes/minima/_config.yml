@@ -4,6 +4,7 @@ title: "hello world"
 #main info
 #owner
 owner: "I am Peter Duchnovsky"
+username: "pduchnovsky"
 email: "admin@pduchnovsky.com"
 info: "An IT Professional with 12+ years of experience."
 info2: "Most of my time I spent in cloud computing area, I am currently working as an DevOps Engineer and thoroughly enjoying new challenges in CI/CD area ! I am also a huge nerd in to computers and at last but not least an Hobbyist Photographer with 9 years of experience."
@@ -14,7 +15,7 @@ menu:
   photography: /photography
 
 #index/main page max show posts (in number)
-max_post: 4
+max_post: 5
 
 # social profile at the footer/bottom
 place: https://google.com/search?q=slovakia
