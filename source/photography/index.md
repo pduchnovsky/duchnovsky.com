@@ -1,32 +1,32 @@
 ---
 title: portfolio
-thumbnail: thumbnail/photography.jpg
+thumbnail: /images/photography.jpg
+date: 2020-10-28 17:35:35
 ---
-
 <H5>Macro</H5>
 
-![<](DSC01515.jpg)
-![>](DSC04396.jpg)
-![<](DSC01066.jpg)
-![>](DSCF1638.jpg)
+![<](/images/DSC01515.jpg)
+![>](/images/DSC04396.jpg)
+![<](/images/DSC01066.jpg)
+![>](/images/DSCF1638.jpg)
 
 <H5>Landscape</H5>
 
-![<](DSC00221.jpg)
-![>](DSC05738.jpg)
-![<](DSC02913.jpg)
-![>](DSC99990.jpg)
+![<](/images/DSC00221.jpg)
+![>](/images/DSC05738.jpg)
+![<](/images/DSC02913.jpg)
+![>](/images/DSC99990.jpg)
 
 <H5>Travel</H5>
 
-![<](DSC05372.jpg)
-![>](DSC03048.jpg)
-![<](DSC01361.jpg)
-![>](DSC03750.jpg)
+![<](/images/DSC05372.jpg)
+![>](/images/DSC03048.jpg)
+![<](/images/DSC01361.jpg)
+![>](/images/DSC03750.jpg)
 
 <H5>Nature</H5>
 
-![<](DSC06055.jpg)
-![>](DSC04214.jpg)
-![<](DSC03949.jpg)
-![>](DSC00220.jpg)
+![<](/images/DSC06055.jpg)
+![>](/images/DSC04214.jpg)
+![<](/images/DSC03949.jpg)
+![>](/images/DSC00220.jpg)
