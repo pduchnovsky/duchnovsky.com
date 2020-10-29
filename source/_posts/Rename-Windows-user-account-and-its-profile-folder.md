@@ -35,7 +35,7 @@ For this scenario let's rename imaginary account *'badname'* to *'goodname'*, wi
   - Upon opening the program press Ctrl + H
   - Follow example below and define Start and End keys:
 ![](/images/pasted-4.png)
-6. Now create a symbolic link to ensure compatibility with some hardcoded entries by some programs using following command (run cmd.exe as admin):
+6. Create a symbolic link to ensure compatibility with some hardcoded entries by some programs using following command (run cmd.exe as admin):
   ``` batch
   mklink /d C:\Users\badname C:\Users\goodname
   ```
