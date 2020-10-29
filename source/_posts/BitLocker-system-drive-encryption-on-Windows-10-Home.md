@@ -1,11 +1,12 @@
 title: BitLocker system drive encryption on Windows 10 Home
-thumbnail: /images/bitlocker.jpg
 tags:
   - guide
   - bitlocker
   - manage-bde
-  - windows 10 home
   - workaround
+  - windows 10
+thumbnail: /images/pasted-0.jpg
+categories: []
 date: 2020-10-02 00:00:00
 ---
 As of time of writing this article, Windows 10 Home does not support BitLocker GUI and that's *fine*, they *probably* don't want home users to lose access to their data in case of wrong configuration, but there is countless businisses using Windows 10 Home, mostly due to cost and many of small businesses could not utilize features of Windows 10 Pro.
