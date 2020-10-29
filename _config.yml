@@ -117,3 +117,4 @@ all_minifier: true
 deploy:
   type: 'git'
   repo: https://github.com/pduchnovsky/pduchnovsky.github.io
+  branch: gh-pages
