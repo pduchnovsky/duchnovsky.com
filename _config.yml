@@ -109,8 +109,13 @@ plugins:
 ## Themes: https://hexo.io/themes/
 theme: minima
 
+# Minifier
+all_minifier: true
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
   repo: https://github.com/pduchnovsky/pduchnovsky.github.io
+  branch: gh-pages
+  message: "Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }}"
