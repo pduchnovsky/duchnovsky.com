@@ -116,6 +116,9 @@ body {
 /* Images */
 
 img {
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.699);
+  -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.699);
+   box-shadow: 0 0 7px rgba(0, 0, 0, 0.699);
   max-width:100%;
   max-height:100%;
 }
@@ -141,10 +144,6 @@ img[alt$="><"] {
   height: auto;
   margin: auto;
   float: none !important;
-}
-
-p {
-  overflow: auto;
 }
 
 /* blockquote */
@@ -219,7 +218,7 @@ body.darkmode {
 }
 
 a.image path {
-  fill: black;
+  fill: rgb(65, 65, 65);
 }
 
 body.darkmode a.image path {
