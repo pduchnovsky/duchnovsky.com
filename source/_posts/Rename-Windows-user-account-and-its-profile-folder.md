@@ -1,3 +1,4 @@
+---
 title: Rename Windows user account and its profile folder
 tags:
   - guide
@@ -6,9 +7,9 @@ tags:
   - account
   - rename
   - mklink
-thumbnail: /images/pasted-2.png
+thumbnail: /images/2020-10-15-23-32-24.png
 categories: []
-date: 2020-10-29 17:56:00
+date: 2020-10-15 17:56:00
 ---
 There are few cases where you'd like to rename somebody's user account as well as profile folder and I will explain on how to do it properly.
 
@@ -34,10 +35,10 @@ For this scenario let's rename imaginary account *'badname'* to *'goodname'*, wi
 5. Do batch search and replace in the registry, I found it was the easiest using tool like [Advanced Regedit (win32)](https://sourceforge.net/projects/regedt33/)
   - Upon opening the program press Ctrl + H
   - Follow example below and define Start and End keys:
-![](/images/pasted-4.png)
+  ![](/images/2020-10-15-23-33-04.png)
 6. Create a symbolic link to ensure compatibility with some hardcoded entries by some programs using following command (run cmd.exe as admin):
   ``` batch
   mklink /d C:\Users\badname C:\Users\goodname
   ```
 7. Now reboot the system and log in with the new username.
-	- You can re-connect to Microsoft account now.
+	- You can re-connect to Microsoft account now :)

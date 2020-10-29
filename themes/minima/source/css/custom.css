@@ -123,12 +123,14 @@ img {
 img[alt$=">"] {
   float: right;
   max-width: 49.5%;
+  max-height:100%;
   margin-bottom: 1%;
 }
 
 img[alt$="<"] {
   float: left;
   max-width: 49.5%;
+  max-height:100%;
   margin-bottom: 1%;
 }
 
@@ -139,6 +141,10 @@ img[alt$="><"] {
   height: auto;
   margin: auto;
   float: none !important;
+}
+
+p {
+  overflow: auto;
 }
 
 /* blockquote */
