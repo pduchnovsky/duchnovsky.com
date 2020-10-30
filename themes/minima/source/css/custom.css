@@ -12,10 +12,6 @@ body {
   overflow-x: hidden;
 }
 
-.header {
-  float: left;
-}
-
 .center {
   text-align: center;
 }
@@ -97,43 +93,27 @@ body {
   border-radius: 50%;
 }
 
-/* Clickme mode switch */
-
-.clickme {
-  opacity: 0.700;
-  position: absolute;
-  margin-left: 7px;
-  margin-top: -12px;
-}
-
-.mode {
-  max-width: 0px;
-  margin-left: 10px;
-  display: block;
-  cursor: pointer;
-}
-
 /* Images */
 
 img {
-  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.699);
-  -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.699);
-   box-shadow: 0 0 7px rgba(0, 0, 0, 0.699);
-  max-width:100%;
-  max-height:100%;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.600);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.600);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.600);
+  max-width: 100%;
+  max-height: 100%;
 }
 
 img[alt$=">"] {
   float: right;
   max-width: 49.5%;
-  max-height:100%;
+  max-height: 100%;
   margin-bottom: 1%;
 }
 
 img[alt$="<"] {
   float: left;
   max-width: 49.5%;
-  max-height:100%;
+  max-height: 100%;
   margin-bottom: 1%;
 }
 
@@ -192,6 +172,7 @@ blockquote footer cite:before {
 }
 
 /* Dark mode */
+
 body {
   transition: all 0.3s ease-in-out;
 }
@@ -217,8 +198,23 @@ body.darkmode {
   color: rgb(256, 256, 256);
 }
 
+.modeswitch {
+  cursor: pointer;
+  position: relative;
+  width: 0px;
+  right: 15px;
+}
+
+.modeswitch a.image:hover path {
+  fill: #5f5f5f;
+}
+
+body.darkmode .modeswitch a.image:hover path {
+  fill: #5f5f5f;
+}
+
 a.image path {
-  fill: rgb(65, 65, 65);
+  fill: black;
 }
 
 body.darkmode a.image path {
