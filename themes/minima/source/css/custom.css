@@ -205,11 +205,19 @@ body.darkmode {
   right: 15px;
 }
 
-.modeswitch a.image:hover path {
+.modeswitch path {
+  fill: black;
+}
+
+body.darkmode .modeswitch path {
+  fill: white;
+}
+
+.modeswitch:hover path {
   fill: #5f5f5f;
 }
 
-body.darkmode .modeswitch a.image:hover path {
+body.darkmode .modeswitch:hover path {
   fill: #5f5f5f;
 }
 
