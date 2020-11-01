@@ -3,7 +3,7 @@ title: "hello world (:"
 
 #main info
 #owner
-owner: "I am Peter Duchnovsky"
+owner: "Peter Duchnovsky"
 username: "pduchnovsky"
 email: "admin@pduchnovsky.com"
 info: "An IT Professional with 12+ years of experience."
@@ -32,7 +32,7 @@ nanobar: /js/nanobar.min.js
 favicon: /images/favicon.png
 
 # main page thumbnail
-mainthumb: /images/thumb.jpg
+mainthumb: /images/thumb.png
 
 article:
   thumbnail: true
