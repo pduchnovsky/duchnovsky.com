@@ -10,6 +10,23 @@ body {
   padding: 5px;
   overflow-y: scroll;
   overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.modeswitch {
+  cursor: pointer;
+  position: relative;
+  width: 0px;
+  right: 15px;
+  top: 38px;
+}
+
+.modeswitch path {
+  fill: black;
+}
+
+.modeswitch:hover path {
+  fill: #5f5f5f;
 }
 
 .center {
@@ -93,12 +110,20 @@ body {
   border-radius: 50%;
 }
 
+a.image path {
+  fill: black;
+}
+
+a.image:hover path {
+  fill: inherit;
+}
+
 /* Images */
 
 img {
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.600);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.600);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.600);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
   max-width: 100%;
   max-height: 100%;
 }
@@ -173,10 +198,6 @@ blockquote footer cite:before {
 
 /* Dark mode */
 
-body {
-  transition: all 0.3s ease-in-out;
-}
-
 .trans {
   animation: transitionPlay 0.7s;
 }
@@ -198,44 +219,23 @@ body.darkmode {
   color: rgb(256, 256, 256);
 }
 
-.modeswitch {
-  cursor: pointer;
-  position: relative;
-  width: 0px;
-  right: 15px;
-}
-
-.modeswitch path {
-  fill: black;
-}
-
 body.darkmode .modeswitch path {
   fill: white;
-}
-
-.modeswitch:hover path {
-  fill: #5f5f5f;
 }
 
 body.darkmode .modeswitch:hover path {
   fill: #5f5f5f;
 }
 
-a.image path {
-  fill: black;
-}
-
 body.darkmode a.image path {
   fill: white;
-}
-
-a.image:hover path {
-  fill: inherit;
 }
 
 body.darkmode a.image:hover path {
   fill: inherit;
 }
+
+/* Other */
 
 #comments {
   text-align: center;
@@ -250,7 +250,7 @@ body.darkmode a.image:hover path {
 }
 
 .image {
-  margin-left: 5px
+  margin-left: 5px;
 }
 
 @media (min-width: 550px) {
@@ -264,6 +264,6 @@ body.darkmode a.image:hover path {
     text-align: left;
   }
   .image {
-    margin-left: 2px
+    margin-left: 2px;
   }
 }
