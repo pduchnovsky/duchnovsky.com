@@ -237,16 +237,33 @@ body.darkmode a.image:hover path {
   fill: inherit;
 }
 
-.hidden {
-  display: none;
+#comments {
+  text-align: center;
+}
+
+#madewith {
+  text-align: center;
 }
 
 .posisi {
   text-align: center;
 }
 
+.image {
+  margin-left: 5px
+}
+
 @media (min-width: 550px) {
   .posisi {
     text-align: right;
+  }
+  #comments {
+    text-align: left;
+  }
+  #madewith {
+    text-align: left;
+  }
+  .image {
+    margin-left: 2px
   }
 }
