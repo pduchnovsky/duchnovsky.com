@@ -16,8 +16,6 @@
     "hexo-all-minifier": "^0.5.5",
     "hexo-asset-link": "^2.1.0",
     "hexo-canonical-link": "^2.0.0",
-    "hexo-clean-css": "^1.0.0",
-    "hexo-css-merge": "^1.0.6",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",

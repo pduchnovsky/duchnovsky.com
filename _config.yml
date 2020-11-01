@@ -100,22 +100,11 @@ all_minifier: true
 html_minifier:
   silent: true
 css_minifier:
-  enabled: false
+  silent: true
 js_minifier:
   silent: true
 image_minifier:
   silent: true
-# hexo-css-merge
-css_merge:
-  minify: true
-  path: themes/minima/source/css/
-  destination: styles
-  files:
-    - custom
-    - normalize
-    - prism-dark
-    - prism-line-numbers
-    - skeleton
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
