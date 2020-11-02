@@ -54,7 +54,8 @@ manage-bde -protectors -enable c:
 manage-bde -protectors -get c: > %UserProfile%\Desktop\BitLocker-Recovery-Key.txt
 ```
 
-❗ **Back up your `BitLocker-Recovery-Key.txt` (which will be located on your desktop)** ❗
+❗ **Back up your `BitLocker-Recovery-Key.txt`** ❗
+(which will be located on your desktop)
 
 And voila, data on your system drive will soon be encrypted and protected  
 To check status of encryption use command: `manage-bde -status`
