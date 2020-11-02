@@ -134,7 +134,6 @@ img {
   height: auto;
   margin: auto;
   margin-bottom: 1%;
-  display: block;
 }
 
 @media (min-width: 550px) {
