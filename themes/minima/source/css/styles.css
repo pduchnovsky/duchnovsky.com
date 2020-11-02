@@ -490,7 +490,7 @@ body {
   font-size: 1.7em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 300;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #222;
 }
 
