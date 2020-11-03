@@ -29,7 +29,6 @@ Minima uses vanilla JavaScript, vanilla CSS, and [EJS](https://ejs.co/). So it w
 - Code highlighting with [Prism.js](https://prismjs.com/)
 - [Disqus](https://disqus.com/) for post comments
 - Show comments section button for faster posts loading
-- Google Analytics
 
 ## Documentation
 See the quick start instruction and [documentation here](https://adisaktijrs.github.io/2020/10/11/Hexo-Minima-Theme-v1-0-Officially-Released/#Documentation)
