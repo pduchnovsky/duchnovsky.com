@@ -1,5 +1,6 @@
 ---
 title: portfolio
+description: pduchnovsky | Welcome to my Photography portfolio
 thumbnail: /photography/photography.jpg
 date: 2020-10-28 17:35:35
 ---
