@@ -30,7 +30,7 @@ This guide is written in a way which expects you to be at least familiar with so
 2. 'Clone' newly created repo locally based on your preference.
 3. Now let's install & configure hexo.
 
-   ```shell
+   ```bash
    # Install prerequisite packages
    sudo apt install libtool automake autoconf nasm
    # Install hexo npm package globally (-g)
@@ -113,7 +113,7 @@ This guide is written in a way which expects you to be at least familiar with so
 6. You add new posts by executing `hexo new post <post name>` and this will generate a new post in to `source/_posts` directory where you can edit them.
 7. Once both main config as well as theme config files are set up based on your preferences, you can test your page locally by starting hexo local server.
 
-   ```shell
+   ```bash
    hexo server
    ```
 
@@ -123,7 +123,7 @@ This guide is written in a way which expects you to be at least familiar with so
 
 1. From your 'root' directory (the directory where your repo is cloned) you will be performing initial (and subsequent) deployment to the GitHub repository this way:
 
-   ```shell
+   ```bash
    # Get in to your repo directory
    cd your/repo/dir
    # Stage all changes
@@ -136,7 +136,7 @@ This guide is written in a way which expects you to be at least familiar with so
 
    For easier management I created following 'alias' function, you can add this piece of code in your `.bashrc` or `.bash_aliases` in your home directory (~/).
 
-   ```shell
+   ```bash
    push () {
        read -p "Commit description: " desc
        git add . && git add . && git commit -a --allow-empty-message -m "$desc" && git push
