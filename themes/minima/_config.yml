@@ -1,10 +1,8 @@
 #title in header
 title: "hello world (:"
-
 #main info
 #owner
 owner: "Peter Duchnovsky"
-username: "pduchnovsky"
 email: "admin@pduchnovsky.com"
 info: "An IT Professional with 12+ years of experience."
 #optional info 2 & 3
@@ -15,10 +13,8 @@ desc: "This is my blog / portfolio where I'll share some insights, guides and so
 #menu
 menu:
   photography: /photography
-
 #index/main page max show posts (in number)
 max_post: 5
-
 # social profile at the footer/bottom
 place: https://google.com/search?q=slovakia
 placename: Slovakia
@@ -26,19 +22,14 @@ github: https://github.com/pduchnovsky
 linkedin: https://linkedin.com/in/pduchnovsky
 twitter: https://twitter.com/pduchnovsky
 instagram: https://instagram.com/pduchnovsky
-
 # js
 nanobar: /js/nanobar.min.js
-
 # favicon
 favicon: /images/favicon.png
-
 # main page thumbnail
 mainthumb: /images/thumb.png
-
 article:
   thumbnail: true
-
 # DISQUS comments (sign up to Disqus to get disqus_shortname)
 disqus_enabled: true
 disqus_shortname: pduchnovsky
