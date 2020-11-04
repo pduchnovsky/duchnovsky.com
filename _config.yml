@@ -4,7 +4,6 @@ title: pduchnovsky | a drop in the ocean | DevOps engineer on the loose
 description: "Programming, System Administration & Photography Blog & Portfolio"
 keywords: programming system administration photography portfolio sysadmin devops engineer
 author: Peter Duchnovsky
-language: en
 ## URL
 url: https://pduchnovsky.com
 root: /
@@ -15,19 +14,15 @@ pretty_urls:
 ## Directory
 source_dir: source
 public_dir: public
-tag_dir: tags
 archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
 i18n_dir: :lang
-skip_render: admin/*
 ## Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :title.md
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: true
 external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
+  enable: true
+  field: site
   exclude: ""
 filename_case: 0
 render_drafts: false
@@ -38,8 +33,6 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ""
-## include/exclude/ignore
-include: _redirects
 ## Home page setting
 index_generator:
   path: ""
@@ -57,6 +50,9 @@ pagination_dir: page
 # Theme:
 theme: minima
 ## Extensions
+## Netlify CMS
+include: _redirects
+skip_render: admin/*
 # hexo-all-minifier
 all_minifier: true
 image_minifier:
