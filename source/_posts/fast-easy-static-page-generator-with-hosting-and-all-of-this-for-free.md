@@ -118,7 +118,6 @@ This guide is written in a way which expects you to be at least familiar with so
    > \*Other options are not as effective as the plugin we installed for hexo (hexo-all-minifier)
    >
    > **Domain Management**: Optionally set up custom domain and definitely set up **https** certificate, which is of course free, thanks to AWESOME [Let's encrypt](https://letsencrypt.org) !
-5. Enable optional plugins in **Plugins** section, I use only "Submit Sitemap"  by cdeleeuwe, which automatically sends our sitemap to Google, Bing, and Yandex after every build.
 6. Now.. every time you 'push' changes in your repo, netlify will auto**magic**ally build the site using hexo and publish it.
 
 ##### Optional stuff
@@ -190,6 +189,8 @@ Also create this `sitemap_template.xml` in the project root directory:
      {% endfor %}
    </urlset>
    ```
+Now you could enable optional plugin "Submit Sitemap"  by cdeleeuwe in **Plugins** section of Netlify, which automatically sends our sitemap to Google, Bing, and Yandex after every build.
+
 As for obfuscation plugin, you can use this html code in your posts or theme files to obfuscate email addresses either taken from config or directly used in the code.
 This should provide at least minimal protection.
 
