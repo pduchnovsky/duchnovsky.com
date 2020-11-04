@@ -27,14 +27,19 @@ This guide is written in a way which expects you to be at least familiar with so
    * You can select private repository
 
      ![github private](/images/rftocwl0cz.jpg)
-2. 'Clone' newly created repo locally based on your preference.
-3. Now let's install & configure hexo.
+2. Now let's install & configure hexo.
 
    ```bash
    # Install prerequisite packages
    sudo apt install libtool automake autoconf nasm
    # Install hexo npm package globally (-g)
    sudo npm install -g hexo-cli
+   ```
+
+   Now let's create a new directory and initialize it
+
+   ```bash
+   mkdir -p your/repo/dir
    # Initialize your locally cloned git directory
    hexo init your/repo/dir
    # Switch to the initialized directory
@@ -48,7 +53,12 @@ This guide is written in a way which expects you to be at least familiar with so
    npm install --save hexo-helper-obfuscate
    npm install --save hexo-asset-link
    ```
-4. It is now the time to edit your _config file located in your newly initialized directory, configure basics such as **url, title, description, keywords** etc..
+
+   Let me show you how the basic directory structure looks like and which config files there are:
+
+   ![hexo tree structure](/images/bh87wgsqlm.jpg)
+
+3. It is now the time to edit your _config file located in your newly initialized directory, configure basics such as **url, title, description, keywords** etc..
 
    then add these lines at the end, so above installed additional plugins would work.
 
@@ -109,9 +119,9 @@ This guide is written in a way which expects you to be at least familiar with so
      {% endfor %}
    </urlset>
    ```
-5. Optionally ou can install custom theme from various available [here](https://hexo.io/themes) or straight away continue setup of `_config.yml` file of your default theme here: `themes/landscape/_config.yml` where you need to also edit some fields such as page **title, owner, info, description** etc.. (depending on theme).
-6. You add new posts by executing `hexo new post <post name>` and this will generate a new post in to `source/_posts` directory where you can edit them.
-7. Once both main config as well as theme config files are set up based on your preferences, you can test your page locally by starting hexo local server.
+4. Optionally ou can install custom theme from various available [here](https://hexo.io/themes) or straight away continue setup of `_config.yml` file of your default theme here: `themes/landscape/_config.yml` where you need to also edit some fields such as page **title, owner, info, description** etc.. (depending on theme).
+5. You add new posts by executing `hexo new post <post name>` and this will generate a new post in to `source/_posts` directory where you can edit them.
+6. Once both main config as well as theme config files are set up based on your preferences, you can test your page locally by starting hexo local server.
 
    ```bash
    hexo server
