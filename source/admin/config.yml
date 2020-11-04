@@ -1,7 +1,8 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-
+site_url: https://pduchnovsky.com
+display_url: https://pduchnovsky.com
 media_folder: "source/images" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/images" # The src attribute for uploaded media will begin with /images/uploads
 
@@ -14,5 +15,5 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", required: true, widget: "datetime"}
-      - {label: "Edited Date", name: "updated", required: true, widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
