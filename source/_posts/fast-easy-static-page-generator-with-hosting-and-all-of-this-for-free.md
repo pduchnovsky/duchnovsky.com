@@ -119,8 +119,8 @@ This guide is written in a way which expects you to be at least familiar with so
      {% endfor %}
    </urlset>
    ```
-4. Optionally ou can install custom theme from various available [here](https://hexo.io/themes) or straight away continue setup of `_config.yml` file of your default theme here: `themes/landscape/_config.yml` where you need to also edit some fields such as page **title, owner, info, description** etc.. (depending on theme).
-5. You add new posts by executing `hexo new post <post name>` and this will generate a new post in to `source/_posts` directory where you can edit them.
+4. Optionally you can install custom theme from various available [here](https://hexo.io/themes) or straight away continue setup of `_config.yml` file of your default theme here: `themes/landscape/_config.yml` where you need to also edit some fields such as page **title, owner, info, description** etc.. (depending on theme).
+5. You add new posts by executing `hexo new post <post name>` and this will generate a new post in to `source/_posts` directory where you can edit them, initially there is 'hello-world.md' located there so you can get familiar with it.
 6. Once both main config as well as theme config files are set up based on your preferences, you can test your page locally by starting hexo local server.
 
    ```bash
