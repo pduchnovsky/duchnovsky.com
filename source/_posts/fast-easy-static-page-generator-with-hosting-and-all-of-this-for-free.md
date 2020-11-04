@@ -48,8 +48,6 @@ This guide is written in a way which expects you to be at least familiar with so
    # Install additional hexo plugins, --save ensures that these plugins are
    # saved to package.json file, so netlify can install them too !
    npm install --save hexo-all-minifier
-   npm install --save hexo-generator-sitemap
-   npm install --save hexo-helper-obfuscate
    npm install --save hexo-asset-link
    ```
 
@@ -66,65 +64,9 @@ This guide is written in a way which expects you to be at least familiar with so
    image_minifier:
      optimizationLevel: 2
      progressive: true
-   # hexo-generator-sitemap
-   sitemap:
-     path: /sitemap.xml
-     template: ./sitemap_template.xml
-     rel: true
-     tags: true
-     categories: true
-   ```
-
-   Also create this `sitemap_template.xml` in the current directory:
-
-   ```xml
-   <?xml version="1.0" encoding="UTF-8"?>
-   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-     {% for post in posts %}
-     <url>
-       <loc>{{ post.permalink | uriencode }}</loc>
-       {% if post.updated %}
-       <lastmod>{{ post.updated | formatDate }}</lastmod>
-       {% elif post.date %}
-       <lastmod>{{ post.date | formatDate }}</lastmod>
-       {% endif %}
-     </url>
-     {% endfor %}
-
-     <url>
-       <loc>{{ config.url | uriencode }}</loc>
-       <lastmod>{{ sNow | formatDate }}</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>1.0</priority>
-     </url>
-
-     {% for tag in tags %}
-     <url>
-       <loc>{{ tag.permalink | uriencode }}</loc>
-       <lastmod>{{ sNow | formatDate }}</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6</priority>
-     </url>
-     {% endfor %}
-
-     {% for cat in categories %}
-     <url>
-       <loc>{{ cat.permalink | uriencode }}</loc>
-       <lastmod>{{ sNow | formatDate }}</lastmod>
-       <changefreq>daily</changefreq>
-       <priority>0.6</priority>
-     </url>
-     {% endfor %}
-   </urlset>
    ```
 4. Optionally you can install custom theme from various available [here](https://hexo.io/themes) or straight away continue setup of `_config.yml` file of your default theme here: `themes/landscape/_config.yml` where you need to also edit some fields such as page **title, owner, info, description** etc.. (depending on theme).
 5. You add new posts by executing `hexo new post <post name>` and this will generate a new post in to `source/_posts` directory where you can edit them, initially there is 'hello-world.md' located there so you can get familiar with it.
-6. (optional) Since we installed obfuscation plugin, you can use this html code in your posts or theme files to obfuscate email addresses either taken from config or directly used in the code.
-   This should provide at least minimal protection.
-
-   ```html
-   <a href="mailto:<%- obfuscate(email@address.here) %>" target="_blank">email me</a>
-   ```
 7. Once both main config as well as theme config files are set up based on your preferences, you can test your page locally by starting hexo local server.
 
    ```bash
@@ -178,3 +120,85 @@ This guide is written in a way which expects you to be at least familiar with so
    > **Domain Management**: Optionally set up custom domain and definitely set up **https** certificate, which is of course free, thanks to AWESOME [Let's encrypt](https://letsencrypt.org) !
 5. Enable optional plugins in **Plugins** section, I use only "Submit Sitemap"  by cdeleeuwe, which automatically sends our sitemap to Google, Bing, and Yandex after every build.
 6. Now.. every time you 'push' changes in your repo, netlify will auto**magic**ally build the site using hexo and publish it.
+
+##### Optional stuff
+
+I personally use following two plugins:
+
+```
+npm install --save hexo-generator-sitemap
+npm install --save hexo-helper-obfuscate
+```
+This must be put in hexo config for sitemap generator
+   ```yaml
+   # hexo-generator-sitemap
+   sitemap:
+     path: /sitemap.xml
+     template: ./sitemap_template.xml
+     rel: true
+     tags: true
+     categories: true
+   ```
+
+**In order to use sitemap automatic generation** add this code in your themes files so it is being used somewhere under <head> html tag, in case of my theme this was possible in **layout.ejs** file.
+
+   ```html
+   <% if (config.sitemap.rel) { %>
+   <link rel="sitemap" href="<%-config.url + config.sitemap.path %>" />
+   <% } %>
+   ```
+
+Also create this `sitemap_template.xml` in the project root directory:
+
+   ```xml
+   <?xml version="1.0" encoding="UTF-8"?>
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+     {% for post in posts %}
+     <url>
+       <loc>{{ post.permalink | uriencode }}</loc>
+       {% if post.updated %}
+       <lastmod>{{ post.updated | formatDate }}</lastmod>
+       {% elif post.date %}
+       <lastmod>{{ post.date | formatDate }}</lastmod>
+       {% endif %}
+     </url>
+     {% endfor %}
+
+     <url>
+       <loc>{{ config.url | uriencode }}</loc>
+       <lastmod>{{ sNow | formatDate }}</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>1.0</priority>
+     </url>
+
+     {% for tag in tags %}
+     <url>
+       <loc>{{ tag.permalink | uriencode }}</loc>
+       <lastmod>{{ sNow | formatDate }}</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6</priority>
+     </url>
+     {% endfor %}
+
+     {% for cat in categories %}
+     <url>
+       <loc>{{ cat.permalink | uriencode }}</loc>
+       <lastmod>{{ sNow | formatDate }}</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6</priority>
+     </url>
+     {% endfor %}
+   </urlset>
+   ```
+As for obfuscation plugin, you can use this html code in your posts or theme files to obfuscate email addresses either taken from config or directly used in the code.
+This should provide at least minimal protection.
+
+   ```html
+   <a href="mailto:<%- obfuscate(email@address.here) %>" target="_blank">email me</a>
+   ```
+I put it in my menu and ensured that it's taking email address from newly defined 'email' variable that I put in my theme config.
+   ```html
+   <% if (theme.email) { %>
+   <a href="mailto:<%- obfuscate(theme.email) %>" target="_blank" class="ml">email</a>
+   <% } %>
+   ```
