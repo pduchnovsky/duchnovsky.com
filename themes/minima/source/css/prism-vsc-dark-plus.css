@@ -90,7 +90,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.deleted {
-	color: #ce9178;
+	color: #e08f6f;
 }
 
 .language-css .token.string.url {
