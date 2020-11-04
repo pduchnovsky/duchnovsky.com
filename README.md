@@ -1,4 +1,4 @@
-# duchnovsky.sk
+# pduchnovsky.com
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0d0020b0-d9bc-4258-b04e-602d96c7fa95/deploy-status)](https://app.netlify.com/sites/gallant-golick-bdb929/deploys)
 
 Install Hexo
