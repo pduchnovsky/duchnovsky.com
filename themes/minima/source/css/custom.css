@@ -175,14 +175,6 @@ blockquote footer cite:before {
   padding: 0 0.5em;
 }
 
-/* Nanobar */
-.nanobar {
-  left: 0;
-}
-.nanobar .bar {
-  background: #808080;
-}
-
 /* Scroll bar */
 ::-webkit-scrollbar {
   width: 8px;
