@@ -4,7 +4,6 @@ backend:
 display_url: https://pduchnovsky.com
 media_folder: "source/images"
 public_folder: "/images"
-publish_mode: editorial_workflow
 
 collections:
   - name: "posts"
