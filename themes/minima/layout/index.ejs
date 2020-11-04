@@ -1,9 +1,13 @@
 <div class="row ">
   <div class="column">
-    <p>I am</p>
-    <h4 class="mb-2"><%= theme.owner %></h4>
+    <p>I’m <strong><%= theme.owner %></strong></p>
     <p><%= theme.info %></p>
+    <% if (theme.info2) { %>
     <p><%= theme.info2 %></p>
+    <% } %>
+    <% if (theme.info3) { %>
+    <p><%= theme.info3 %></p>
+    <% } %>
     <p><%= theme.desc %></p>
   </div>
 </div>
