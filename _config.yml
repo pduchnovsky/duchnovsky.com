@@ -58,6 +58,16 @@ pagination_dir: page
 # Theme:
 theme: minima
 ## Extensions
+# hexo-all-minifier
+all_minifier: true
+html_minifier:
+  silent: true
+css_minifier:
+  silent: true
+js_minifier:
+  silent: true
+image_minifier:
+  silent: true
 # hexo-generator-sitemap
 sitemap:
   path: /sitemap.xml
