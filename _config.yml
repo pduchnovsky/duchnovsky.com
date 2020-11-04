@@ -65,6 +65,8 @@ js_minifier:
   silent: true
 image_minifier:
   silent: true
+  optimizationLevel: 7
+  progressive: true
 # hexo-generator-sitemap
 sitemap:
   path: /sitemap.xml
