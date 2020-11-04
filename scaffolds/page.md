@@ -1,4 +1,6 @@
 ---
 title: {{ title }}
-thumbnail: 
+date: {{ date }}
+thumbnail:
+description:
 ---
