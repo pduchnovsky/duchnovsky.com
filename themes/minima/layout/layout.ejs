@@ -73,7 +73,6 @@
   <%- css('css/custom.css') %>
   <%- css('css/prism.css') %>
   <link rel="icon" type="image/png" href="<%- theme.favicon %>">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -101,17 +100,7 @@
     nanobar.go(76);
     nanobar.go(100);
   </script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
+
 </body>
 
 </html>
