@@ -7,7 +7,7 @@ author: Peter Duchnovsky
 ## URL
 url: https://pduchnovsky.com
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :title/
 pretty_urls:
   trailing_index: true
   trailing_html: true
