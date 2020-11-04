@@ -64,8 +64,8 @@ css_minifier:
 js_minifier:
   silent: true
 image_minifier:
-  silent: true
-  optimizationLevel: 7
+  silent: false
+  optimizationLevel: 2
   progressive: true
 # hexo-generator-sitemap
 sitemap:
