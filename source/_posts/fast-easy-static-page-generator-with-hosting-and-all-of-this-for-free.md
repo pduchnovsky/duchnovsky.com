@@ -40,9 +40,7 @@ This guide is written in a way which expects you to be at least familiar with so
 
    ```bash
    mkdir -p your/repo/dir
-   # Initialize your locally cloned git directory
    hexo init your/repo/dir
-   # Switch to the initialized directory
    cd your/repo/dir
    # Install hexo packages
    npm install
@@ -57,7 +55,6 @@ This guide is written in a way which expects you to be at least familiar with so
    Let me show you how the basic directory structure looks like and which config files there are:
 
    ![hexo tree structure](/images/bh87wgsqlm.jpg)
-
 3. It is now the time to edit your _config file located in your newly initialized directory, configure basics such as **url, title, description, keywords** etc..
 
    then add these lines at the end, so above installed additional plugins would work.
@@ -131,11 +128,16 @@ This guide is written in a way which expects you to be at least familiar with so
 
 ##### Deployment
 
-1. From your 'root' directory (the directory where your repo is cloned) you will be performing initial (and subsequent) deployment to the GitHub repository this way:
+1. Firstly, add your [ssh key](https://www.ssh.com/ssh/keygen) [to your github account here](https://github.com/settings/keys)
+2. From your hexo 'root' directory (or so called git project directory) you will be performing initial (and subsequent) deployment to the GitHub repository this way:
 
    ```bash
-   # Get in to your repo directory
+   # Get in to your directory where you initialized hexo
    cd your/repo/dir
+   # Initialize git
+   git init
+   # now connect to your remote git repository
+   git remote add origin git@github.com:username/repo_name.git
    # Stage all changes
    git add .
    # Commit all changes
@@ -155,10 +157,10 @@ This guide is written in a way which expects you to be at least familiar with so
    ```
 
    Then execute `exec $SHELL` to load the changes, from now command `push` will work and perform stage, commit and push all at once with or without commit message (for repo in your current directory).
-2. Once the code is published to github, we can set up netlify page :) go to [app.netlify.com](https://app.netlify.com) and click '**new site from git**' and follow on screen instructions, netlify will detect that you are using hexo and prepare deployment commands/directory for you, so you can just continue to 'deploy site'.
+3. Once the code is published to github, we can set up netlify page :) go to [app.netlify.com](https://app.netlify.com) and click '**new site from git**' and follow on screen instructions, netlify will detect that you are using hexo and prepare deployment commands/directory for you, so you can just continue to 'deploy site'.
 
    ![netlify build settings](/images/iqmylptbnl.jpg)
-3. Set following options on netlify to optimize build and experience, under **site settings**:
+4. Set following options on netlify to optimize build and experience, under **site settings**:
 
    > **General** -> Site details -> Change site name -> Choose custom name ;)
    >
@@ -167,5 +169,5 @@ This guide is written in a way which expects you to be at least familiar with so
    > \*Other options are not as effective as the plugin we installed for hexo (hexo-all-minifier)
    >
    > **Domain Management**: Optionally set up custom domain and definitely set up **https** certificate, which is of course free, thanks to AWESOME [Let's encrypt](https://letsencrypt.org) !
-4. Enable optional plugins in **Plugins** section, I use only "Submit Sitemap"  by cdeleeuwe, which automatically sends our sitemap to Google, Bing, and Yandex after every build.
-5. Now.. every time you 'push' changes in your repo, netlify will auto**magic**ally build the site using hexo and publish it.
+5. Enable optional plugins in **Plugins** section, I use only "Submit Sitemap"  by cdeleeuwe, which automatically sends our sitemap to Google, Bing, and Yandex after every build.
+6. Now.. every time you 'push' changes in your repo, netlify will auto**magic**ally build the site using hexo and publish it.
