@@ -59,14 +59,7 @@ theme: minima
 ## Extensions
 # hexo-all-minifier
 all_minifier: true
-html_minifier:
-  silent: true
-css_minifier:
-  silent: true
-js_minifier:
-  silent: true
 image_minifier:
-  silent: true
   optimizationLevel: 2
   progressive: true
 # hexo-generator-sitemap
