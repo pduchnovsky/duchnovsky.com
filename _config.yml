@@ -38,6 +38,8 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ""
+## include/exclude/ignore
+include: _redirects
 ## Home page setting
 index_generator:
   path: ""
