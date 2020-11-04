@@ -2,13 +2,6 @@
 title: Rename Windows user account and its profile folder
 date: 2020-10-15 17:56:00
 thumbnail: /images/2020-10-15-23-32-24.png
-tags:
-  - guide
-  - windows 10
-  - windows 8
-  - account
-  - rename
-  - mklink
 ---
 There are few cases where you'd like to rename somebody's user account as well as profile folder and I will explain on how to do it properly.
 

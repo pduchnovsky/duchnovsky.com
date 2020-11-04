@@ -1,19 +1,18 @@
 # Hexo Configuration
-# Site
+## Site
 title: pduchnovsky | a drop in the ocean | DevOps engineer on the loose
 description: "Programming, System Administration & Photography Blog & Portfolio"
 keywords: programming system administration photography portfolio sysadmin devops engineer
 author: Peter Duchnovsky
 language: en
-# URL
+## URL
 url: https://pduchnovsky.com
 root: /
 permalink: :year/:month/:day/:title/
-permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
-# Directory
+  trailing_index: true
+  trailing_html: true
+## Directory
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -22,7 +21,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-# Writing
+## Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
@@ -39,13 +38,11 @@ prismjs:
   preprocess: true
   line_number: true
   tab_replace: ""
-# Home page setting
+## Home page setting
 index_generator:
   path: ""
   per_page: 10
   order_by: -date
-# Category & Tag
-default_category: uncategorized
 # Metadata elements
 meta_generator: true
 # Date / Time format
