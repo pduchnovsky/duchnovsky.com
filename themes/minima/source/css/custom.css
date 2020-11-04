@@ -1,0 +1,277 @@
+html {
+  overflow: auto;
+}
+
+body {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.title {
+  position: relative;
+  width: auto;
+}
+
+.modeswitch {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 6px;
+}
+
+.modeswitch path {
+  fill: black;
+}
+
+.modeswitch:hover path {
+  fill: #808080;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  margin-left: 0;
+}
+
+.lit {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.little-svg {
+  fill: #fff;
+}
+
+.ml-0 {
+  margin-left: 1rem;
+}
+
+.ml {
+  margin-left: 2rem;
+}
+
+.bottom {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-bottom: 0px;
+}
+
+.mb-1 {
+  margin-bottom: 0px;
+}
+
+.mb-2 {
+  margin-bottom: 5px;
+}
+
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+.mr {
+  margin-right: 32px;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
+.mt-2 {
+  margin-top: 3rem;
+}
+
+.mt-3 {
+  margin-top: 4rem;
+}
+
+.mx-auto {
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.tag-link {
+  margin-right: 10px;
+}
+
+.about {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+a.icon path {
+  fill: black;
+}
+
+a.icon:hover path {
+  fill: inherit;
+  transform: translateY(-5px);
+}
+
+/* Images */
+
+img {
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 1%;
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  img[alt$=">"] {
+    float: right;
+    max-width: 49.5%;
+    margin-bottom: 1%;
+  }
+
+  img[alt$="<"] {
+    float: left;
+    max-width: 49.5%;
+    margin-bottom: 1%;
+  }
+
+  img[alt$="><"] {
+    float: none !important;
+  }
+}
+
+/* blockquote */
+blockquote {
+  background-color: rgba(148, 148, 149, 0.08);
+  border-left: 8px solid #808080;
+  margin: 1.5em 0px;
+  padding: 1.1em 20px 1px 20px;
+  font-style: italic;
+}
+
+blockquote footer {
+  font-size: 16px;
+  padding-bottom: 10px;
+  margin-top: -10px;
+}
+
+blockquote footer cite:before {
+  content: "—";
+  padding: 0 0.5em;
+}
+
+/* Nanobar */
+.nanobar {
+  left: 0;
+}
+.nanobar .bar {
+  background: #808080;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: rgb(128 128 128 / 80%);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgb(255 255 255);
+}
+
+/* Dark mode */
+
+.trans {
+  animation: transitionPlay 0.7s;
+}
+
+@keyframes transitionPlay {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+body.darkmode {
+  background: rgb(34, 34, 38);
+  color: rgb(255, 255, 255);
+}
+
+body.darkmode .modeswitch path {
+  fill: white;
+}
+
+body.darkmode .modeswitch:hover path {
+  fill: #808080;
+}
+
+body.darkmode a.icon path {
+  fill: white;
+}
+
+body.darkmode a.icon:hover path {
+  fill: inherit;
+}
+
+/* Other */
+
+#comments {
+  text-align: center;
+}
+
+#madewith {
+  text-align: center;
+}
+
+.posisi {
+  text-align: center;
+}
+
+.icon {
+  margin-left: 5px;
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .posisi {
+    text-align: right;
+  }
+  #comments {
+    text-align: left;
+  }
+  #madewith {
+    text-align: left;
+  }
+  .icon {
+    margin-left: 2px;
+  }
+}
