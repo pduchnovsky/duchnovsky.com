@@ -1,6 +1,7 @@
 ---
 title: Fast & easy static page generator with hosting and all of this.. for free ?
 date: 2020-11-04T20:07:55.139Z
+updated: 2020-11-04T23:03:26.346Z
 thumbnail: /images/staticgenerator.jpg
 ---
 Yes !
@@ -118,7 +119,13 @@ This guide is written in a way which expects you to be at least familiar with so
    ```
 4. Optionally you can install custom theme from various available [here](https://hexo.io/themes) or straight away continue setup of `_config.yml` file of your default theme here: `themes/landscape/_config.yml` where you need to also edit some fields such as page **title, owner, info, description** etc.. (depending on theme).
 5. You add new posts by executing `hexo new post <post name>` and this will generate a new post in to `source/_posts` directory where you can edit them, initially there is 'hello-world.md' located there so you can get familiar with it.
-6. Once both main config as well as theme config files are set up based on your preferences, you can test your page locally by starting hexo local server.
+6. (optional) Since we installed obfuscation plugin, you can use this html code in your posts or theme files to obfuscate email addresses either taken from config or directly used in the code.
+   This should provide at least minimal protection.
+
+   ```html
+   <a href="mailto:<%- obfuscate(email@address.here) %>" target="_blank">email me</a>
+   ```
+7. Once both main config as well as theme config files are set up based on your preferences, you can test your page locally by starting hexo local server.
 
    ```bash
    hexo server
