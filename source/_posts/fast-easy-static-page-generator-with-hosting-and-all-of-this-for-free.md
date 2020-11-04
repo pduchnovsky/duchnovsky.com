@@ -8,15 +8,17 @@ And it's quite easy and most importantly, if you are a little bit like me, it's 
 
 So let's get in to it, my setup is already done so this guide is being done as retrospective, this way should be the least painful.
 
-The last time I tried static page generators was quite a while.. going years back, it was a terrible experience back then if im to be honest.. those times are long gone.
+The last time I tried static page generators was quite a while.. going years back, it was a terrible experience back then if I'm to be honest.. those times are long gone.
 
 I was looking for lightweight, fast and easy to understand and set up static site generator and I decided for [Hexo](https://hexo.io)
 
-Now.. this guide is written in a way which expects you to be at least familiar with some basics of git, npm, linux systems in general.
+This guide is written in a way which expects you to be at least familiar with some basics of git, npm, linux systems in general.
 
 ###### Prerequisites:
 
 * Free accounts on both [GitHub](https://github.com) and [Netlify](https://www.netlify.com)
+* Linux system or Windows 10 WSL/2
+* Installed [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), [nodejs](https://nodejs.org/en/download) + [npm](https://www.npmjs.com/get-npm)
 
 ##### Let's begin !
 
@@ -39,10 +41,12 @@ Now.. this guide is written in a way which expects you to be at least familiar w
    cd your/repo/dir
    # Install hexo packages
    npm install
-   # Install additional hexo plugins
+   # Install additional hexo plugins, --save ensures that these plugins are
+   # saved to package.json file, so netlify can install them too !
    npm install --save hexo-all-minifier
    npm install --save hexo-generator-sitemap
    npm install --save hexo-helper-obfuscate
+   npm install --save hexo-asset-link
    ```
 4. It is now the time to edit your _config file located in your newly initialized directory, configure basics such as **url, title, description, keywords** etc..
 
@@ -106,7 +110,8 @@ Now.. this guide is written in a way which expects you to be at least familiar w
    </urlset>
    ```
 5. Optionally ou can install custom theme from various available [here](https://hexo.io/themes) or straight away continue setup of `_config.yml` file of your default theme here: `themes/landscape/_config.yml` where you need to also edit some fields such as page **title, owner, info, description** etc.. (depending on theme).
-6. Once both main config as well as theme config files are set up based on your preferences, you can test your page locally by starting hexo local server.
+6. You add new posts by executing `hexo new post <post name>` and this will generate a new post in to `source/_posts` directory where you can edit them.
+7. Once both main config as well as theme config files are set up based on your preferences, you can test your page locally by starting hexo local server.
 
    ```shell
    hexo server
