@@ -1,0 +1,137 @@
+baseURL = "https://pduchnovsky.com"
+title = "pduchnovsky.com"
+theme = "hugo-coder"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 5
+pygmentsUseClasses = true
+enableEmoji = true
+enableRobotsTXT = true
+
+[sitemap]
+changefreq = "monthly"
+filename = "sitemap.xml"
+priority = 0.5
+
+[markup.highlight]
+noClasses = false
+
+[privacy.instagram]
+simple = true
+[privacy.twitter]
+enableDNT = true
+simple = true
+[privacy.vimeo]
+enableDNT = true
+simple = true
+[privacy.youtube]
+privacyEnhanced = true
+
+[permalinks]
+posts = "/:year/:month/:slug/"
+
+[params]
+author = "Peter Duchnovsky"
+license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
+description = "...a drop in the ocean or a needle in a haystack ? | #coding, #devops, #automation, #multicloud, #infrastructure & #photography => Blog/Portfolio"
+keywords = "multicloud,cloud,programming,coding,system,administration,photography,portfolio,sysadmin,devops,engineer,engineering"
+info = "Senior DevOps Engineer"
+avatarURL = "/photo.png"
+footerContent = "“Trust Me ❤ I'm An Engineer”"
+dateFormat = "January 2, 2006"
+hideFooter = false
+hideCredits = true
+hideCopyright = false
+since = 2020
+enablePostImg = true
+enablePostSummary = true
+images = ["/thumb.png"]
+rtl = false
+colorScheme = "auto"
+hideColorSchemeToggle = false
+maxSeeAlsoItems = 5
+enableTwemoji = false
+
+[params.csp]
+childsrc = ["'self'"]
+fontsrc = ["'self'"]
+formaction = ["'self'"]
+framesrc = ["'self'"]
+imgsrc = ["'self'"]
+objectsrc = ["'none'"]
+stylesrc = ["'self'", "'unsafe-inline'"]
+scriptsrc = [
+  "'self'",
+  "'unsafe-inline'",
+  "https://static.cloudflareinsights.com",
+]
+connectsrc = ["'self'"]
+
+[taxonomies]
+category = "categories"
+series = "series"
+tag = "tags"
+author = "authors"
+
+[[params.social]]
+name = "LinkedIn"
+icon = "fa fa-2x fa-linkedin"
+weight = 1
+url = "https://linkedin.com/in/pduchnovsky"
+[[params.social]]
+name = "Github"
+icon = "fa fa-2x fa-github"
+weight = 4
+url = "https://github.com/pduchnovsky"
+
+[languages.en]
+languageName = "🇺🇸"
+
+[[languages.en.menu.main]]
+name = "Blog"
+weight = 1
+url = "posts/"
+
+[[languages.en.menu.main]]
+name = "Photography"
+weight = 2
+url = "portfolio/"
+
+[[languages.en.menu.main]]
+name = "About me"
+weight = 3
+url = "about-me/"
+
+[[languages.en.menu.main]]
+name = "Email"
+weight = 4
+url = "mailto:admin@pduchnovsky.com"
+
+[languages.sk]
+languageName = "🇸🇰"
+
+[languages.sk.params]
+author = "Peter Duchnovský"
+info = "DevOps Inžinier"
+description = "...kvapka v oceáne alebo ihla v kope sena ? | Blogovanie a portfólio o programovaní, správe systémov a fotografovaní"
+keywords = "programovanie, systém, správa, fotografia, portfólio sysadmin, devops, inžinier"
+
+[[languages.sk.menu.main]]
+name = "Blog"
+weight = 1
+url = "posts/"
+
+[[languages.sk.menu.main]]
+name = "Fotografia"
+weight = 2
+url = "portfolio/"
+
+[[languages.sk.menu.main]]
+name = "O mne"
+weight = 3
+url = "o-mne/"
+
+[[languages.sk.menu.main]]
+name = "Email"
+weight = 4
+url = "mailto:admin@pduchnovsky.com"

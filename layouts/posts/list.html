@@ -1,0 +1,36 @@
+{{ define "title" }}
+  {{ title (i18n (lower .Title)) | default .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+  <section class="container list">
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="{{ .Permalink | safeURL }}">
+          {{ title (i18n (lower .Title)) | default .Title }}
+        </a>
+      </h1>
+    </header>
+    {{ .Content }}
+    <ul>
+      {{- range .Paginator.Pages -}}
+        {{- .Render "li" -}}
+      {{- end -}}
+    </ul>
+
+    {{ partial "pagination.html" . }}
+    <ul>
+      <b>All Categories & Tags:</b>
+      <div>
+        <i class="fa fa-folder" aria-hidden="true"></i>&nbsp
+        {{ range .Site.Taxonomies.categories }}
+          <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
+        {{ end }}
+        <br>
+        <i class="fa fa-tag" aria-hidden="true"></i>&nbsp
+        {{ range .Site.Taxonomies.tags }}
+          <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
+        {{ end }}
+      </div>
+    </ul>
+  </section>
+{{ end }}
