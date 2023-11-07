@@ -3,7 +3,7 @@
 # https://pduchnovsky.com/2020/11/images-optimization-for-web/
 
 # Add list of folder names to ignore array here, separated by space
-ignore=("./themes/*" "./resources/*" "./assets/*")
+ignore=("./themes/*" "./resources/*" "./assets/*" "./public/*")
 
 # Array of png optimizers with their arguments
 optimizers=(
