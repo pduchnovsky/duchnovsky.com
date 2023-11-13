@@ -1,0 +1,23 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+	<title>radarr-svg</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m0 0h1024v1024h-1024z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: none } 
+		.s1 { fill: #24292e } 
+		.s2 { fill: #07c0e7 } 
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g id="Layer">
+			<path id="a" fill-rule="evenodd" class="s0" d="m0 0h1024v1024h-1024z"/>
+			<g id="Layer">
+				<path id="Layer" class="s1" d="m162.9 164.2l7.8 739c-62.2 7.8-108.9-23.3-108.9-85.6l-7.8-614.5c0-194.4 178.9-241.1 287.8-163.3l552.3 318.9c77.8 54.4 93.3 155.6 54.4 225.6-7.7-54.5-31.1-85.6-77.7-116.7l-622.3-350c-46.7-31.2-85.6-23.4-85.6 46.6z"/>
+				<path id="Layer" class="s1" d="m116.2 942.1c46.7 15.5 93.4 7.8 132.3-15.6l637.8-373.3c38.9 54.4 31.1 108.9-15.5 140l-536.8 311.1c-77.8 38.9-178.9 0-217.8-62.2z"/>
+				<path id="Layer" class="s2" d="m302.9 724.3l381.2-217.8-373.4-210z"/>
+			</g>
+		</g>
+	</g>
+</svg>
