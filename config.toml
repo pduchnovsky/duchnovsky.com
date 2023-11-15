@@ -65,7 +65,7 @@ scriptsrc = [
   "'unsafe-inline'",
   "https://static.cloudflareinsights.com",
 ]
-connectsrc = ["'self'"]
+connectsrc = ["'self'", "https://cloudflareinsights.com"]
 
 [taxonomies]
 category = "categories"
