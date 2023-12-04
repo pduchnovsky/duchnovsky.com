@@ -4,6 +4,7 @@ function FindProxyForURL(url, host) {
     shExpMatch(host, "*free-mp3-download.net") ||
     shExpMatch(host, "*warforum.cz") ||
     shExpMatch(host, "*torrentleech.org") ||
+    shExpMatch(host, "*tleechreload.org") ||
     shExpMatch(host, "*sktorrent.eu") ||
     shExpMatch(host, "*anonfiles.com") ||
     shExpMatch(host, "*airvpn.org") ||
