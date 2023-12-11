@@ -1,4 +1,4 @@
-# pduchnovsky.com
+# duchnovsky.com
 
 Initialize submodule(s)
 

@@ -1,5 +1,5 @@
-baseURL = "https://pduchnovsky.com"
-title = "pduchnovsky.com"
+baseURL = "https://duchnovsky.com"
+title = "duchnovsky.com"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
@@ -105,7 +105,7 @@ url = "about-me/"
 [[languages.en.menu.main]]
 name = "Email"
 weight = 4
-url = "mailto:admin@pduchnovsky.com"
+url = "mailto:admin@duchnovsky.com"
 
 [languages.sk]
 languageName = "🇸🇰"
@@ -134,4 +134,4 @@ url = "o-mne/"
 [[languages.sk.menu.main]]
 name = "Email"
 weight = 4
-url = "mailto:admin@pduchnovsky.com"
+url = "mailto:admin@duchnovsky.com"

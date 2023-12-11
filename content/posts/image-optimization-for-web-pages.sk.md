@@ -9,6 +9,7 @@ tags = ["optimalizacia", "web", "obrazky", "bash"]
 title = "Optimalizácia obrázkov pre webové stránky skriptom"
 
 +++
+
 Ak chcete, aby sa vaša stránka načítavala rýchlo a chcete získať pekné skóre na stránkach pagespeed, lighthouse alebo všeobecne.. musíte optimalizovať veľkosť svojich obrázkov.
 
 Našiel som jednoduchý skript, ktorý som ešte viac optimalizoval aby mi túto namáhavú úlohu zautomatizoval a rozhodol som sa ho tu zdieľať, ak by mal niekto záujem :)
@@ -17,12 +18,12 @@ Ak ho však chcete použiť, najskôr nainštalujte nasledujúce balíčky
 
 `sudo apt-get install optipng advancecomp pngcrush jpegoptim`
 
-Potom jednoducho použite tento skript vo svojom zdrojovom adresári webu, môžete nakonfigurovať viac adresárov ako výnimku, v mojom prípade pretože používam Hugo, sú to adresáre ako **themes** a **_resources**, kde nechcem optimalizovať obrázky.
+Potom jednoducho použite tento skript vo svojom zdrojovom adresári webu, môžete nakonfigurovať viac adresárov ako výnimku, v mojom prípade pretože používam Hugo, sú to adresáre ako **themes** a **\_resources**, kde nechcem optimalizovať obrázky.
 
 ```bash
 #!/bin/bash
 # Script adapted by pduchnovsky
-# https://pduchnovsky.com/2020/11/images-optimization-for-web/
+# https://duchnovsky.com/2020/11/images-optimization-for-web/
 
 # Add list of folder names to ignore array here, separated by space
 ignore=("./themes/*" "./resources/*" "./assets/*")

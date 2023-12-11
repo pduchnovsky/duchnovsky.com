@@ -9,13 +9,14 @@ tags = ["bitbucket", "pipelines", "monitorovanie", "bash"]
 title = "Monitorovanie pozastavených Bitbucket pipelines"
 
 +++
+
 Toto je jeden z problémov, s ktorými sa stretávame v prípade Bitbucket Pipelines, ak dôjde k niekoľkým zlúčeniam revízii do našich hlavných branches v krátkom časovom období, v zásade sa rolloutne iba prvá, pretože bitbucket pozastaví zvyšok.
 
 To je z hľadiska logiky CI/CD do istej miery pochopiteľné a je to v poriadku, ak máte naraz iba jednu veľkú revíziu, ale to spôsobuje početné problémy tímom, kde viac ľudí pracuje na paralelných funkciách.
 
 Bohužiaľ sa zdá, že Atlassian nedáva bitbucket pipelines veľkú prioritu, pretože problém je dobre známy už viac ako 2 roky podľa [BCLOUD-16304](https://jira.atlassian.com/browse/BCLOUD-16304) a aktívne sa na ňom nepracuje, aj keď má tento problém viac ako 100 hlasov.
 
-Musel som vymyslieť nejaké riešenie a tak som vytvoril jednoduchý [BASH](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) skript, ktorý funguje s Bitbucket API.
+Musel som vymyslieť nejaké riešenie a tak som vytvoril jednoduchý [BASH](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>) skript, ktorý funguje s Bitbucket API.
 
 Tento skript používa na overenie autentifikáciu bitbucket (`BITBUCKET_CREDS`) s [heslom aplikácie](https://bitbucket.org/account/settings/app-passwords/) a robí nasledujúce:
 
@@ -26,12 +27,12 @@ Celkom jednoduchý skript, ktorý však ušetrí veľa úsilia. Používame ho a
 
 **Požiadavky**:
 
-* nainštalovaný balík [jq](https://stedolan.github.io/jq/download/) v systéme, kde je spúšťaný skript.
+- nainštalovaný balík [jq](https://stedolan.github.io/jq/download/) v systéme, kde je spúšťaný skript.
 
 ```shell
 #!/bin/bash
 # Script developed by pduchnovsky
-# https://pduchnovsky.com/2020/11/bitbucket-pipelines-monitoring/
+# https://duchnovsky.com/2020/11/bitbucket-pipelines-monitoring/
 
 #Variables definition:
 BITBUCKET_CREDS="username:app_password"

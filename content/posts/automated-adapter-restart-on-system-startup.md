@@ -10,6 +10,7 @@ tags = ["powershell", "task scheduler", "ethernet"]
 title = "Automated Adapter Restart on System Startup"
 
 +++
+
 Yes, damnit !
 
 Since I bought a new z790 board I was experiencing problems where my Ethernet network adapter was not connected after startup, solution was to restart the adapter and everything was peachy.
@@ -25,7 +26,7 @@ Simple as that, enjoy !
 ```powershell
 # Restart Adapter when not UP (intel i225-v and i226-v issue workaround)
 # Script developed by pduchnovsky
-# https://pduchnovsky.com/2023/02/automated-adapter-restart/
+# https://duchnovsky.com/2023/02/automated-adapter-restart/
 $AdapterName = "Ethernet"
 $PowerShellPath = "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
 $Argument = "-command `"Get-NetAdapter $AdapterName | ? status -ne up | Restart-NetAdapter`""

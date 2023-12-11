@@ -10,6 +10,7 @@ tags = ["powershell", "task scheduler", "ethernet"]
 title = "Automatizovaný reštart adaptéra pri spustení systému"
 
 +++
+
 Áno, sakra!
 
 Od kúpy novej dosky z790 som mal problémy, keď môj ethernetový sieťový adaptér nebol po spustení pripojený, riešením bolo reštartovať adaptér a všetko bolo krásne.
@@ -25,7 +26,7 @@ Jednoduché, užite si to!
 ```powershell
 # Automatizovany restart adaptera ak nie je pripojeny (intel i225-v a i226-v problem)
 # Script vytvoril pduchnovsky
-# https://pduchnovsky.com/2023/02/automaticky-restart-adaptera/
+# https://duchnovsky.com/2023/02/automaticky-restart-adaptera/
 $AdapterName = "Ethernet"
 $PowerShellPath = "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe"
 $Argument = "-command `"Get-NetAdapter $AdapterName | ? status -ne up | Restart-NetAdapter`""

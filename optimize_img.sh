@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script adapted by pduchnovsky
-# https://pduchnovsky.com/2020/11/images-optimization-for-web/
+# https://duchnovsky.com/2020/11/images-optimization-for-web/
 
 # Add list of folder names to ignore array here, separated by space
 ignore=("./themes/*" "./resources/*" "./assets/*" "./public/*")

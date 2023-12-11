@@ -9,13 +9,14 @@ tags = ["bitbucket", "pipelines", "monitoring", "bash"]
 title = "Paused Bitbucket pipelines monitoring"
 
 +++
+
 This is one of the problems we experience with Bitbucket Pipelines, if there are multiple commits/merges to our main branches within short period of time, only first commit is basically deployed because bitbucket pauses the rest.
 
 This is somewhat understandable in terms of CI/CD logic and is fine if you only have one big merge at a time, but causes numerous problems for teams with multiple people working on features in paralel.
 
 Unfortunately, it seems Atlassian does not give much priority to bitbucket pipelines since the problem is well known for over 2 years as per [BCLOUD-16304](https://jira.atlassian.com/browse/BCLOUD-16304), and is not actively being worked on even though this issue has over 100 votes.
 
-I had to come up with some workaround and so I created a simple [BASH](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) script which works with bitbucket API.
+I had to come up with some workaround and so I created a simple [BASH](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>) script which works with bitbucket API.
 
 This script uses bitbucket credentials (`BITBUCKET_CREDS`) with [app password](https://bitbucket.org/account/settings/app-passwords/) for authentication and does following:
 
@@ -26,12 +27,12 @@ Quite simple script, but it saves a lot of effort.. we use it as monitoring scri
 
 **Requirements**
 
-* installed [jq](https://stedolan.github.io/jq/download/) package on the system where script is running
+- installed [jq](https://stedolan.github.io/jq/download/) package on the system where script is running
 
 ```shell
 #!/bin/bash
 # Script developed by pduchnovsky
-# https://pduchnovsky.com/2020/11/bitbucket-pipelines-monitoring/
+# https://duchnovsky.com/2020/11/bitbucket-pipelines-monitoring/
 
 #Variables definition:
 BITBUCKET_CREDS="username:app_password"

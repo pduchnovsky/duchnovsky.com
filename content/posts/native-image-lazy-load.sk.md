@@ -9,14 +9,15 @@ tags = ["hugo"]
 title = "Natívne 'lenivé' načítanie, fingerprinting, responsiveness obrázkov"
 
 +++
+
 Hľadal som ľahkú cestu k tomu, čo som sa snažil dosiahnuť .. ale nenašiel som to, tak som sa rozhodol, že si sám vytvorím hugo 'pipeline' (tak sa im hovorí, či ? :D).
 
 V podstate som sa snažil dosiahnuť tieto veci:
 
-* Pridanie 'lenivého' načítania obrázka html, ktoré teraz podporuje väčšina prehliadačov
-* Pridanie šírky / výšky obrázka, aby v prípade načítania stránky neskákali ako bláznivé
-* Generovanie "odtlačku prsta" obrázka pre tzv. cache busting
-* Generovanie rôznych veľkostí obrázkov pre responzívnost
+- Pridanie 'lenivého' načítania obrázka html, ktoré teraz podporuje väčšina prehliadačov
+- Pridanie šírky / výšky obrázka, aby v prípade načítania stránky neskákali ako bláznivé
+- Generovanie "odtlačku prsta" obrázka pre tzv. cache busting
+- Generovanie rôznych veľkostí obrázkov pre responzívnost
 
 ^ tieto veci by taktiež mali v niektorých prípadoch trochu vylepšiť hodnotenie rýchlosti stránok.
 
@@ -24,7 +25,7 @@ Toto je každopádne kúsok kódu, ktorý by ste mali vložiť do `layouts/_defa
 
 ```go
 <!-- layouts/_default/_markup/render-image.html -->
-<!-- Developed/Adapted by pduchnovsky, https://pduchnovsky.com/2020/11/native-image-lazy-load/ -->
+<!-- Developed/Adapted by pduchnovsky, https://duchnovsky.com/2020/11/native-image-lazy-load/ -->
 
 {{ $img := "" }}{{ $thumb := "" }}{{ $srcset := slice }}
 {{ $src := ( .Destination | safeURL ) }}

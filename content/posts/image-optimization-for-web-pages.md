@@ -9,6 +9,7 @@ tags = ["optimization", "web", "images", "bash"]
 title = "Image optimization for web pages with script"
 
 +++
+
 If you want your page to load fast and you want to get some nice score on pagespeed or lighthouse or in general.. you must optimize the size of your images.
 
 I found simple script that I actually optimized even more in order to automate this tedious task for me, might as well share it here, if anybody is interested :)
@@ -17,12 +18,12 @@ However, in order to use it, first install following packages
 
 `sudo apt-get install optipng advancecomp pngcrush jpegoptim`
 
-Then simply use this script in your web source directory, you might configure multiple directories as an exception, in my case since I use Hugo, it's like **themes** and **_resources** directories where I do not want to optimize images.
+Then simply use this script in your web source directory, you might configure multiple directories as an exception, in my case since I use Hugo, it's like **themes** and **\_resources** directories where I do not want to optimize images.
 
 ```bash
 #!/bin/bash
 # Script adapted by pduchnovsky
-# https://pduchnovsky.com/2020/11/images-optimization-for-web/
+# https://duchnovsky.com/2020/11/images-optimization-for-web/
 
 # Add list of folder names to ignore array here, separated by space
 ignore=("./themes/*" "./resources/*" "./assets/*")
