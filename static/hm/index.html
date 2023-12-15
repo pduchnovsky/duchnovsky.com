@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="min-vh-100">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      :root {
+        --tile-1-bgcolor: #3cb0c7;
+        --tile-2-bgcolor: green;
+        --tile-3-bgcolor: #ffc107;
+      }
+      div[data-name]:before {
+        content: attr(data-name);
+        background: red;
+        min-height: 100px;
+        font-size: 4em;
+        text-transform: uppercase;
+        color: white;
+        padding: 0.5em;
+        box-shadow: 5px 5px 15px -10px rgb(0 0 0 / 75%);
+        display: table;
+        width: 100%;
+      }
+      .icon {
+        height: 160px;
+        padding: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      /* first, nth+1, 2nth+1, etc*/
+      .row > div:nth-of-type(3n + 1) div[data-name]::before {
+        background: var(--tile-1-bgcolor);
+      }
+      .row > div:nth-of-type(3n + 2) div[data-name]::before {
+        background: var(--tile-2-bgcolor);
+      }
+      .row > div:nth-of-type(3n + 3) div[data-name]::before {
+        background: var(--tile-3-bgcolor);
+      }
+      /* Enable darkmode in a Bootstrap Page */
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: var(--bs-dark);
+          color: var(--bs-light);
+        }
+        footer .text-muted {
+          color: rgba(
+            var(--bs-secondary-rgb),
+            var(--bs-text-opacity)
+          ) !important;
+        }
+      }
+    </style>
+    <body class="d-flex flex-column min-vh-100">
+      <nav class="navbar navbar-fixed-top navbar-dark bg-dark">
+        <div class="container">
+          <div class="navbar-header">
+            <span class="navbar-brand"> Apps </span>
+          </div>
+        </div>
+      </nav>
+      <div class="container my-auto pb-4">
+        <div class="row align-content-center justify-content-evenly">
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-4 mx-xl-2">
+            <a
+              class="text-decoration-none text-secondary"
+              href="https://oc.duchnovsky.com/"
+            >
+              <div class="row-cols-1 text-center">
+                <div
+                  style="background-image: url(omada.svg)"
+                  class="col mb-3 icon"
+                ></div>
+                <span class="col text-capitalize">
+                  <span class="me-2"></span>
+                  omada
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-4 mx-xl-2">
+            <a
+              class="text-decoration-none text-secondary"
+              href="https://server.duchnovsky.com/"
+            >
+              <div class="row-cols-1 text-center">
+                <div
+                  style="background-image: url(dsm.svg)"
+                  class="col mb-3 icon"
+                ></div>
+                <span class="col text-capitalize">
+                  <span class="me-2"></span>
+                  server
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-4 mx-xl-2">
+            <a
+              class="text-decoration-none text-secondary"
+              href="https://hass.duchnovsky.com/"
+            >
+              <div class="row-cols-1 text-center">
+                <div
+                  style="background-image: url(hass.svg)"
+                  class="col mb-3 icon"
+                ></div>
+                <span class="col text-capitalize">
+                  <span class="me-2"></span>
+                  hass
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-4 mx-xl-2">
+            <a
+              class="text-decoration-none text-secondary"
+              href="https://overseerr.duchnovsky.com/"
+            >
+              <div class="row-cols-1 text-center">
+                <div
+                  style="background-image: url(overseerr.svg)"
+                  class="col mb-3 icon"
+                ></div>
+                <span class="col text-capitalize">
+                  <span class="me-2"></span>
+                  overseerr
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-4 mx-xl-2">
+            <a
+              class="text-decoration-none text-secondary"
+              href="https://plex.duchnovsky.com/"
+            >
+              <div class="row-cols-1 text-center">
+                <div
+                  style="background-image: url(plex.svg)"
+                  class="col mb-3 icon"
+                ></div>
+                <span class="col text-capitalize">
+                  <span class="me-2"></span>
+                  plex
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-4 mx-xl-2">
+            <a
+              class="text-decoration-none text-secondary"
+              href="https://prowlarr.duchnovsky.com/"
+            >
+              <div class="row-cols-1 text-center">
+                <div
+                  style="background-image: url(prowlarr.svg)"
+                  class="col mb-3 icon"
+                ></div>
+                <span class="col text-capitalize">
+                  <span class="me-2"></span>
+                  Prowlarr
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-4 mx-xl-2">
+            <a
+              class="text-decoration-none text-secondary"
+              href="https://radarr.duchnovsky.com/"
+            >
+              <div class="row-cols-1 text-center">
+                <div
+                  style="background-image: url(radarr.svg)"
+                  class="col mb-3 icon"
+                ></div>
+                <span class="col text-capitalize">
+                  <span class="me-2"></span>
+                  Radarr
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-4 mx-xl-2">
+            <a
+              class="text-decoration-none text-secondary"
+              href="https://sonarr.duchnovsky.com/"
+            >
+              <div class="row-cols-1 text-center">
+                <div
+                  style="background-image: url(sonarr.svg)"
+                  class="col mb-3 icon"
+                ></div>
+                <span class="col text-capitalize">
+                  <span class="me-2"></span>
+                  Sonarr
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-4 mx-xl-2">
+            <a
+              class="text-decoration-none text-secondary"
+              href="https://bazarr.duchnovsky.com/"
+            >
+              <div class="row-cols-1 text-center">
+                <div
+                  style="background-image: url(bazarr.svg)"
+                  class="col mb-3 icon"
+                ></div>
+                <span class="col text-capitalize">
+                  <span class="me-2"></span>
+                  Bazarr
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mt-4 mx-xl-2">
+            <a
+              class="text-decoration-none text-secondary"
+              href="https://transmission.duchnovsky.com/"
+            >
+              <div class="row-cols-1 text-center">
+                <div
+                  style="background-image: url(transmission.svg)"
+                  class="col mb-3 icon"
+                ></div>
+                <span class="col text-capitalize">
+                  <span class="me-2"></span>
+                  Transmission
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </body>
+  </head>
+</html>
