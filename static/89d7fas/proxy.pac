@@ -1,5 +1,6 @@
 function FindProxyForURL(url, host) {
   if (
+    shExpMatch(host, "*airvpn.org") ||
     shExpMatch(host, "*free-mp3-download.net") ||
     shExpMatch(host, "*warforum.cz") ||
     shExpMatch(host, "*torrentleech.org") ||
