@@ -1,6 +1,6 @@
 sudo apt update && apt install -y openssh-server zram-config unclutter
 echo -e 'port 6816\npermitrootlogin prohibit-password' >> /etc/ssh/sshd_config
-curl -fsSL https://get.docker.com | bash
+wget -qO- https://get.docker.com | bash
 apt remove --purge "libreoffice-*" vlc-data -y; apt clean -y; apt autoremove -y
 wget https://download.nomachine.com/download/8.10/Linux/nomachine_8.10.1_1_amd64.deb
 dpkg -i nomachine_8.10.1_1_amd64.deb; rm nomachine_8.10.1_1_amd64.deb
