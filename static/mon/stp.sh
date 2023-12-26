@@ -5,7 +5,7 @@ apt remove --purge "libreoffice-*" vlc-data -y; apt clean -y; apt autoremove -y
 wget https://download.nomachine.com/download/8.10/Linux/nomachine_8.10.1_1_amd64.deb
 dpkg -i nomachine_8.10.1_1_amd64.deb; rm nomachine_8.10.1_1_amd64.deb
 echo "CreateDisplay 0" >> /usr/NX/etc/server.cfg
-sed -i 's/mode:           one/mode:           off/g' /home/pd/.xscreensaver
+sed -i 's/mode:\t\tone/mode:\t\toff/g' /home/pd/.xscreensaver
 su - pd -c 'xscreensaver-command -restart'
 su - pd -c 'firefox --display=:0 -CreateProfile pd'
 for i in $(ls -d /home/pd/snap/firefox/common/.mozilla/firefox/* | grep .pd$); do
