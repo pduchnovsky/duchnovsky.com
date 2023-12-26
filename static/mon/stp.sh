@@ -6,6 +6,7 @@ wget https://download.nomachine.com/download/8.10/Linux/nomachine_8.10.1_1_amd64
 dpkg -i nomachine_8.10.1_1_amd64.deb; rm nomachine_8.10.1_1_amd64.deb
 echo "CreateDisplay 0" >> /usr/NX/etc/server.cfg
 sed -i 's/mode:\t\tone/mode:\t\toff/g' /home/pd/.xscreensaver
+sed -i 's/#force_color_prompt=yes/force_color_prompt=yes/g' .bashrc
 su - pd -c 'xscreensaver-command -restart'
 su - pd -c 'firefox --display=:0 -CreateProfile pd'
 for i in $(ls -d /home/pd/snap/firefox/common/.mozilla/firefox/* | grep .pd$); do
