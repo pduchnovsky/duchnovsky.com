@@ -68,7 +68,12 @@ su - pd -c 'mkdir .ssh; chmod 700 ~/.ssh;touch ~/.ssh/authorized_keys; chmod 600
 echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAp96owJJPXX0o8o7gc6XRqpYGZMAqNpRRVGwJluK6vm pd@any
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMpwOis2kDy3KursJmtLLydEqHb87D6+ixTADi7myw8e pd@d-server
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFjDMWXdYjxWMZMLHp1Tn38E0ahe8uaQ/eEGdcnnu4SF hass' >> /home/pd/.ssh/authorized_keys
-echo 'r () { su - pd -c "./.bash_profile &" &>/dev/null </dev/null; }' > .bash_aliases
+echo 'd () { docker $@; }
+dp () { while true; do TEXT=$(docker ps --format="table {{ .ID }}\t{{.Names}}\t{{.Status}}"); sleep 0.1; clear; echo "$TEXT"; done; }
+ds () { docker stats --format "table {{.Container}}\t{{.Name}}\t{{.CPUPerc}}\t{{.MemPerc}}\t{{.MemUsage}}"; }
+dl () { [[ ! -z $1 ]] && d logs -f $1; }
+de () { [[ -z ${@:2} ]] && (docker exec -ti $1 bash || docker exec -ti $1 sh) || docker exec -ti $1 ${@:2}; }
+r () { su - pd -c "./.bash_profile &" &>/dev/null </dev/null; }' > .bash_aliases
 echo "DNSStubListener=no" >> /etc/systemd/resolved.conf
 systemctl disable --now systemd-resolved
 systemctl enable --now systemd-resolved
