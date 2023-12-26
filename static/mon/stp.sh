@@ -74,7 +74,8 @@ dp () { while true; do TEXT=$(docker ps --format="table {{ .ID }}\t{{.Names}}\t{
 ds () { docker stats --format "table {{.Container}}\t{{.Name}}\t{{.CPUPerc}}\t{{.MemPerc}}\t{{.MemUsage}}"; }
 dl () { [[ ! -z $1 ]] && d logs -f $1; }
 de () { [[ -z ${@:2} ]] && (docker exec -ti $1 bash || docker exec -ti $1 sh) || docker exec -ti $1 ${@:2}; }
-r () { su - pd -c "./.bash_profile &" &>/dev/null </dev/null; }' > .bash_aliases
+r () { su - pd -c "./.bash_profile &" &>/dev/null </dev/null; }
+k () { pkill -f firefox >/dev/null 2>&1; rm /home/pd/snap/firefox/common/.mozilla/firefox/*/*lock >/dev/null 2>&1; }' > .bash_aliases
 echo "DNSStubListener=no" >> /etc/systemd/resolved.conf
 systemctl disable --now systemd-resolved
 systemctl enable --now systemd-resolved
