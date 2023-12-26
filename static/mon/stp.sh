@@ -5,7 +5,9 @@ apt remove --purge "libreoffice-*" vlc-data -y; apt clean -y; apt autoremove -y
 wget https://download.nomachine.com/download/8.10/Linux/nomachine_8.10.1_1_amd64.deb
 dpkg -i nomachine_8.10.1_1_amd64.deb; rm nomachine_8.10.1_1_amd64.deb
 echo "CreateDisplay 0" >> /usr/NX/etc/server.cfg
-su - pd -c 'DISPLAY=:0 firefox -CreateProfile pd'
+sed -i 's/mode:           one/mode:           off/g' /home/pd/.xscreensaver
+su - pd -c 'xscreensaver-command -restart'
+su - pd -c 'firefox --display=:0 -CreateProfile pd'
 for i in $(ls -d /home/pd/snap/firefox/common/.mozilla/firefox/* | grep .pd$); do
     mkdir $i/chrome
     echo '@-moz-document url-prefix(https://pdu.i234.me) {
@@ -19,14 +21,43 @@ for i in $(ls -d /home/pd/snap/firefox/common/.mozilla/firefox/* | grep .pd$); d
             display: none !important;
         }
     }' > $i/chrome/userContent.css
-    wget https://github.com/pyllyukko/user.js/raw/relaxed/user.js -P $i
-    grep "toolkit.legacyUserProfileCustomizations.stylesheets" "$i/user.js" || echo 'user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);' >> "$i/user.js"
+    echo '
+    user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+    user_pref("media.peerconnection.ice.relay_only", true);
+    user_pref("signon.firefoxRelay.feature disabled", true);
+    user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
+    user_pref("browser.newtabpage.activity-stream.telemetry", false);
+    user_pref("browser.ping-centre.telemetry", false);
+    user_pref("datareporting.healthreport.service.enabled", false);
+    user_pref("datareporting.healthreport.uploadEnabled", false);
+    user_pref("datareporting.policy.dataSubmissionEnabled", false);
+    user_pref("datareporting.sessions.current.clean", true);
+    user_pref("devtools.onboarding.telemetry.logged", false);
+    user_pref("toolkit.telemetry.archive.enabled", false);
+    user_pref("toolkit.telemetry.bhrPing.enabled", false);
+    user_pref("toolkit.telemetry.enabled", false);
+    user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
+    user_pref("toolkit.telemetry.hybridContent.enabled", false);
+    user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+    user_pref("toolkit.telemetry.prompted", Number Value 2);
+    user_pref("toolkit.telemetry.rejected", true);
+    user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
+    user_pref("toolkit.telemetry.server", Delete URL);
+    user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
+    user_pref("toolkit.telemetry.unified", false);
+    user_pref("toolkit.telemetry.unifiedIsOptIn", false);
+    user_pref("toolkit.telemetry.updatePing.enabled", false);
+    user_pref("app.shield.optoutstudies.enabled", false);
+    user_pref("captivedetect.canonicalURL", "");
+    user_pref("network.captive-portal-service.enabled", false);
+    user_pref("browser. sessionstore. resume_from_crash", false);
+    ' >> "$i/user.js"
     chown -R pd:pd $i
 done
 echo 'xset -dpms s off >/dev/null 2>&1
 pkill -f firefox >/dev/null 2>&1; rm /home/pd/snap/firefox/common/.mozilla/firefox/*/*lock >/dev/null 2>&1
 (ps aux | grep firefox | grep SurveillanceStation) || (firefox --display=:0 -P pd -kiosk https://pdu.i234.me:5001/webman/3rdparty/SurveillanceStation >/dev/null 2>&1) &
-' > /home/pd/.bash_profile && chown pd:pd /home/pd/.bash_profile
+' > /home/pd/.bash_profile && chown pd:pd /home/pd/.bash_profile && chmod +x /home/pd/.bash_profile
 echo "Hidden=true" >> /etc/xdg/autostart/upg-notifier-autostart.desktop
 { echo '0 5 * * * su - pd -c "./.bash_profile &" &>/dev/null </dev/null'; } | crontab -u root -
 mkdir .ssh; chmod 700 ~/.ssh; chmod 600 ~/.ssh/authorized_keys
