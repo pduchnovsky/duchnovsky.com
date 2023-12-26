@@ -51,7 +51,8 @@ for i in $(ls -d /home/pd/snap/firefox/common/.mozilla/firefox/* | grep .pd$); d
     user_pref("captivedetect.canonicalURL", "");
     user_pref("network.captive-portal-service.enabled", false);
     user_pref("browser. sessionstore. resume_from_crash", false);
-    ' >> "$i/user.js"
+    user_pref("media.videocontrols.picture-in-picture.video-toggle-enabled", false);
+    ' > "$i/user.js"
     chown -R pd:pd $i
 done
 echo 'xset -dpms s off >/dev/null 2>&1
