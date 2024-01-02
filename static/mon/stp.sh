@@ -58,6 +58,7 @@ for i in $(ls -d /home/pd/snap/firefox/common/.mozilla/firefox/* | grep .pd$); d
 done
 echo 'xset -dpms s off >/dev/null 2>&1
 pkill -f firefox >/dev/null 2>&1; rm /home/pd/snap/firefox/common/.mozilla/firefox/*/*lock >/dev/null 2>&1
+sudo snap refresh
 (ps aux | grep firefox | grep SurveillanceStation) || (firefox --display=:0 -P pd -kiosk https://pdu.i234.me:5001/webman/3rdparty/SurveillanceStation >/dev/null 2>&1) &
 ' > /home/pd/.bash_profile && chown pd:pd /home/pd/.bash_profile && chmod +x /home/pd/.bash_profile
 echo "Hidden=true" >> /etc/xdg/autostart/upg-notifier-autostart.desktop
