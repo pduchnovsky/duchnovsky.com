@@ -1,4 +1,8 @@
-sudo apt update && apt install -y openssh-server zram-config unclutter intel-gpu-tools
+apt update && apt install -y openssh-server zram-config unclutter intel-gpu-tools
+snap remove firefox; apt autoremove snapd -y; apt-mark hold snapd
+wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/121.0/linux-x86_64/en-US/firefox-121.0.tar.bz2
+tar xjf firefox-*.tar.bz2 && rm firefox-121.0.tar.bz2; mv firefox /opt; ln -s /opt/firefox/firefox /usr/local/bin/firefox
+wget https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linux/firefox.desktop -P /usr/share/applications/
 echo -e 'port 6816\npermitrootlogin prohibit-password' >> /etc/ssh/sshd_config
 wget -qO- https://get.docker.com | bash
 apt remove --purge "libreoffice-*" vlc-data -y; apt clean -y; apt autoremove -y
@@ -9,7 +13,7 @@ sed -i 's/mode:\t\tone/mode:\t\toff/g' /home/pd/.xscreensaver
 sed -i 's/#force_color_prompt=yes/force_color_prompt=yes/g' .bashrc
 su - pd -c 'xscreensaver-command -restart'
 su - pd -c 'firefox --display=:0 -CreateProfile pd'
-for i in $(ls -d /home/pd/snap/firefox/common/.mozilla/firefox/* | grep .pd$); do
+for i in $(ls -d /home/pd/.mozilla/firefox/* | grep .pd$); do
     mkdir $i/chrome
     echo '@-moz-document url-prefix(https://pdu.i234.me) {
         #sds-desktop {
@@ -57,8 +61,7 @@ for i in $(ls -d /home/pd/snap/firefox/common/.mozilla/firefox/* | grep .pd$); d
     chown -R pd:pd $i
 done
 echo 'xset -dpms s off >/dev/null 2>&1
-pkill -f firefox >/dev/null 2>&1; rm /home/pd/snap/firefox/common/.mozilla/firefox/*/*lock >/dev/null 2>&1
-sudo snap refresh
+pkill -f firefox >/dev/null 2>&1; rm /home/pd/.mozilla/firefox/*/*lock >/dev/null 2>&1
 (ps aux | grep firefox | grep SurveillanceStation) || (firefox --display=:0 -P pd -kiosk https://pdu.i234.me:5001/webman/3rdparty/SurveillanceStation >/dev/null 2>&1) &
 ' > /home/pd/.bash_profile && chown pd:pd /home/pd/.bash_profile && chmod +x /home/pd/.bash_profile
 echo "Hidden=true" >> /etc/xdg/autostart/upg-notifier-autostart.desktop
@@ -76,7 +79,7 @@ ds () { docker stats --format "table {{.Container}}\t{{.Name}}\t{{.CPUPerc}}\t{{
 dl () { [[ ! -z $1 ]] && d logs -f $1; }
 de () { [[ -z ${@:2} ]] && (docker exec -ti $1 bash || docker exec -ti $1 sh) || docker exec -ti $1 ${@:2}; }
 r () { su - pd -c "./.bash_profile &" &>/dev/null </dev/null; }
-k () { pkill -f firefox >/dev/null 2>&1; rm /home/pd/snap/firefox/common/.mozilla/firefox/*/*lock >/dev/null 2>&1; }' > .bash_aliases
+k () { pkill -f firefox >/dev/null 2>&1; rm /home/pd/.mozilla/firefox/*/*lock >/dev/null 2>&1; }' > .bash_aliases
 echo "DNSStubListener=no" >> /etc/systemd/resolved.conf
 systemctl disable --now systemd-resolved
 systemctl enable --now systemd-resolved
