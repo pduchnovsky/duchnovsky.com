@@ -1,4 +1,4 @@
-sudo apt update && apt install -y openssh-server zram-config unclutter
+sudo apt update && apt install -y openssh-server zram-config unclutter intel-gpu-tools
 echo -e 'port 6816\npermitrootlogin prohibit-password' >> /etc/ssh/sshd_config
 wget -qO- https://get.docker.com | bash
 apt remove --purge "libreoffice-*" vlc-data -y; apt clean -y; apt autoremove -y
