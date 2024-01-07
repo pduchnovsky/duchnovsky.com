@@ -4,7 +4,7 @@ wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/121.0/linux
 tar xjf firefox-*.tar.bz2 && rm firefox-121.0.tar.bz2; mv firefox /opt; ln -s /opt/firefox/firefox /usr/local/bin/firefox
 wget https://raw.githubusercontent.com/mozilla/sumo-kb/main/install-firefox-linux/firefox.desktop -P /usr/share/applications/
 echo -e 'port 6816\npermitrootlogin prohibit-password' >> /etc/ssh/sshd_config
-wget -qO- https://get.docker.com | bash
+echo "10.10.10.2      pdu.i234.me" >> /etc/hosts
 apt remove --purge "libreoffice-*" vlc-data -y; apt clean -y; apt autoremove -y
 wget https://download.nomachine.com/download/8.10/Linux/nomachine_8.10.1_1_amd64.deb
 dpkg -i nomachine_8.10.1_1_amd64.deb; rm nomachine_8.10.1_1_amd64.deb
@@ -64,7 +64,6 @@ echo 'xset -dpms s off >/dev/null 2>&1
 pkill -f firefox >/dev/null 2>&1; rm /home/pd/.mozilla/firefox/*/*lock >/dev/null 2>&1
 (ps aux | grep firefox | grep SurveillanceStation) || (firefox --display=:0 -P pd -kiosk https://pdu.i234.me:5001/webman/3rdparty/SurveillanceStation >/dev/null 2>&1) &
 ' > /home/pd/.bash_profile && chown pd:pd /home/pd/.bash_profile && chmod +x /home/pd/.bash_profile
-echo "Hidden=true" >> /etc/xdg/autostart/upg-notifier-autostart.desktop
 { echo '0 5 * * * reboot'; } | crontab -u root -
 mkdir .ssh; chmod 700 ~/.ssh; touch ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys
 echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMpwOis2kDy3KursJmtLLydEqHb87D6+ixTADi7myw8e pd@d-server
@@ -73,12 +72,7 @@ su - pd -c 'mkdir .ssh; chmod 700 ~/.ssh;touch ~/.ssh/authorized_keys; chmod 600
 echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAp96owJJPXX0o8o7gc6XRqpYGZMAqNpRRVGwJluK6vm pd@any
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMpwOis2kDy3KursJmtLLydEqHb87D6+ixTADi7myw8e pd@d-server
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFjDMWXdYjxWMZMLHp1Tn38E0ahe8uaQ/eEGdcnnu4SF hass' >> /home/pd/.ssh/authorized_keys
-echo 'd () { docker $@; }
-dp () { while true; do TEXT=$(docker ps --format="table {{ .ID }}\t{{.Names}}\t{{.Status}}"); sleep 0.1; clear; echo "$TEXT"; done; }
-ds () { docker stats --format "table {{.Container}}\t{{.Name}}\t{{.CPUPerc}}\t{{.MemPerc}}\t{{.MemUsage}}"; }
-dl () { [[ ! -z $1 ]] && d logs -f $1; }
-de () { [[ -z ${@:2} ]] && (docker exec -ti $1 bash || docker exec -ti $1 sh) || docker exec -ti $1 ${@:2}; }
-r () { su - pd -c "./.bash_profile &" &>/dev/null </dev/null; }
+echo 'r () { su - pd -c "./.bash_profile &" &>/dev/null </dev/null; }
 k () { pkill -f firefox >/dev/null 2>&1; rm /home/pd/.mozilla/firefox/*/*lock >/dev/null 2>&1; }' > .bash_aliases
 echo "DNSStubListener=no" >> /etc/systemd/resolved.conf
 systemctl disable --now systemd-resolved
