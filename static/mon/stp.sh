@@ -66,12 +66,10 @@ pkill -f firefox >/dev/null 2>&1; rm /home/pd/.mozilla/firefox/*/*lock >/dev/nul
 ' > /home/pd/.bash_profile && chown pd:pd /home/pd/.bash_profile && chmod +x /home/pd/.bash_profile
 { echo '0 5 * * * reboot'; } | crontab -u root -
 mkdir .ssh; chmod 700 ~/.ssh; touch ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys
-echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMpwOis2kDy3KursJmtLLydEqHb87D6+ixTADi7myw8e pd@d-server
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAp96owJJPXX0o8o7gc6XRqpYGZMAqNpRRVGwJluK6vm pd@any' >> .ssh/authorized_keys
-su - pd -c 'mkdir .ssh; chmod 700 ~/.ssh;touch ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys'
 echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAp96owJJPXX0o8o7gc6XRqpYGZMAqNpRRVGwJluK6vm pd@any
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMpwOis2kDy3KursJmtLLydEqHb87D6+ixTADi7myw8e pd@d-server
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFjDMWXdYjxWMZMLHp1Tn38E0ahe8uaQ/eEGdcnnu4SF hass' >> /home/pd/.ssh/authorized_keys
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH2zxAwQV0ZPFKSZGGupAl6Gp5uNo7DabxNUVpr8HJiv pduchnovsky@work' >> .ssh/authorized_keys
+su - pd -c 'mkdir .ssh; chmod 700 ~/.ssh;touch ~/.ssh/authorized_keys; chmod 600 ~/.ssh/authorized_keys'
+echo 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFjDMWXdYjxWMZMLHp1Tn38E0ahe8uaQ/eEGdcnnu4SF hass' >> /home/pd/.ssh/authorized_keys
 echo 'r () { su - pd -c "./.bash_profile &" &>/dev/null </dev/null; }
 k () { pkill -f firefox >/dev/null 2>&1; rm /home/pd/.mozilla/firefox/*/*lock >/dev/null 2>&1; }' > .bash_aliases
 echo "DNSStubListener=no" >> /etc/systemd/resolved.conf
