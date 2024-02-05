@@ -30,7 +30,7 @@ for countrycode in $allowed_countries;do
     # Download aggregated list per country
     wget -q --no-check-certificate https://www.ipdeny.com/ipblocks/data/aggregated/${countrycode}-aggregated.zone -O /tmp/nftables-${countrycode}.txt
     sudo nft add set inet filter ${countrycode} { type ipv4_addr\; flags interval\; } # Creates set per country
-    sudo nft add element inet filter ${countrycode} { $(cat /tmp/nftables-${countrycode}.txt | tr "\n" ",") } # Adds IPs from aggregated list to the set
+    sudo nft add element inet filter ${countrycode} { $(tr "\n" "," < /tmp/nftables-${countrycode}.txt) } # Adds IPs from aggregated list to the set
     sudo nft add rule inet filter INPUT ip protocol tcp ip saddr @${countrycode} tcp dport 443 counter accept # Accepts the connection from defined set addresses via tcp port 443
 done
 sudo nft add rule inet filter INPUT tcp dport 443 drop # drop connection via tcp 443 by default
