@@ -7,6 +7,8 @@ paginate = 5
 pygmentsUseClasses = true
 enableEmoji = true
 enableRobotsTXT = true
+buildFuture = true
+buildExpired = true
 
 [sitemap]
 changefreq = "monthly"
@@ -61,9 +63,9 @@ imgsrc = ["'self'"]
 objectsrc = ["'none'"]
 stylesrc = ["'self'", "'unsafe-inline'"]
 scriptsrc = [
-  "'self'",
-  "'unsafe-inline'",
-  "https://static.cloudflareinsights.com",
+    "'self'",
+    "'unsafe-inline'",
+    "https://static.cloudflareinsights.com",
 ]
 connectsrc = ["'self'", "https://cloudflareinsights.com"]
 
