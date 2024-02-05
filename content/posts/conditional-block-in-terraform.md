@@ -1,6 +1,6 @@
 +++
 categories = ["iac", "guides", "automation"]
-date = 2021-07-14T20:39:02Z
+date = 2021-07-14T20:39:02
 description = "sometimes you only want to create a certain block when a variable is set.."
 externalLink = ""
 images = ["/images/asf9fsf8hg.png"]

@@ -1,6 +1,6 @@
 +++
 categories = ["guides"]
-date = 2020-11-11T23:00:00Z
+date = 2020-11-11T23:00:00
 description = "Just recently I was looking for a way on how to simply (without JS) make gallery page for my portfolio and made this css out of many guides on the internet :)"
 externalLink = ""
 images = ["/images/example.KPaZ9hTQEh.jpg"]

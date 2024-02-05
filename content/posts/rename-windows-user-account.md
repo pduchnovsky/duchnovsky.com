@@ -1,6 +1,6 @@
 +++
 categories = ["guides"]
-date = 2020-10-15T23:00:00Z
+date = 2020-10-15T23:00:00
 description = "There are few cases where you'd like to rename somebody's user account as well as profile folder and I will explain on how to do it properly."
 externalLink = ""
 images = ["/images/ehO75Qfj6i.png"]

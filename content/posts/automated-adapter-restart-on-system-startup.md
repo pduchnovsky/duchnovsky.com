@@ -1,6 +1,6 @@
 +++
 categories = ["automation", "guides", "scripts"]
-date = 2023-02-27T22:17:08Z
+date = 2023-02-27T22:17:08
 description = "Workaround for i225-v & i226-v Intel Network Adapter problems"
 externalLink = ""
 images = ["/images/ylrr0ok5p7-1.png"]

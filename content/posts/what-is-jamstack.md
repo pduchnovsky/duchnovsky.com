@@ -1,6 +1,6 @@
 +++
 categories = []
-date = 2020-12-03T09:27:33Z
+date = 2020-12-03T09:27:33
 description = "JAMstack is a modern web development architecture based on client-side JavaScript, APIs and content written in Markup format. The Static Site Generators are closely related to the JAMstack architecture which in itself isjust an acronym. Why closely related ? Because without them it would not be possible to compete with dynamic CMS."
 externalLink = ""
 images = ["/images/Mknql70lm3.png"]

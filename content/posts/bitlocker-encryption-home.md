@@ -1,6 +1,6 @@
 +++
 categories = ["guides"]
-date = 2020-10-02T23:00:00Z
+date = 2020-10-02T23:00:00
 description = "If you manage small business IT infrastructure, or Windows 10 Home in general, you must find a way on how to protect their data even on devices that come with Windows 10 Home."
 externalLink = ""
 images = ["/images/YLrR0Ok5p7.png"]

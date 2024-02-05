@@ -1,6 +1,6 @@
 +++
 categories = ["scripty"]
-date = 2020-11-10T23:00:00Z
+date = 2020-11-10T23:00:00
 description = "Toto je jeden z problémov, s ktorými sa stretávame v prípade Bitbucket Pipelines, ak dôjde k niekoľkým zlúčeniam revízi do našich hlavných branches v krátkom časovom období, v zásade sa rolloutne iba prvá, pretože bitbucket pozastaví zvyšok."
 externalLink = ""
 images = ["/images/LS2lziJFHP.png"]

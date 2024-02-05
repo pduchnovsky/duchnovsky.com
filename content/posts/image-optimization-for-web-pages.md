@@ -1,6 +1,6 @@
 +++
 categories = ["scripts"]
-date = 2020-11-09T23:00:00Z
+date = 2020-11-09T23:00:00
 description = "If you want your page to load fast and you want to get some nice score on pagespeed or lighthouse or in general.. you must optimize the size of your images."
 externalLink = ""
 images = ["/images/mnolwuduqt.png"]

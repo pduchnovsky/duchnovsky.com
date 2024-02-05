@@ -1,6 +1,6 @@
 +++
 categories = ["automatizacia", "navody", "scripty"]
-date = 2023-02-27T22:17:08Z
+date = 2023-02-27T22:17:08
 description = "Riešenie problémov so sieťovým adaptérom Intel i225-v a i226-v"
 externalLink = ""
 images = ["/images/ylrr0ok5p7-1.png"]

@@ -1,6 +1,6 @@
 +++
 categories = ["iac", "navody", "automatizacia"]
-date = 2021-07-14T20:39:02Z
+date = 2021-07-14T20:39:02
 description = "niekedy chcete vytvoriť určitý blok iba vtedy, keď je nastavená premenná .. "
 externalLink = ""
 images = ["/images/asf9fsf8hg.png"]

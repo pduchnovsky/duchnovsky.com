@@ -1,6 +1,6 @@
 +++
 categories = ["scripts"]
-date = 2020-11-10T23:00:00Z
+date = 2020-11-10T23:00:00
 description = "This is one of the problems we experience with Bitbucket Pipelines, if there are multiple commits/merges to our main branches within short period of time, only first commit is basically deployed because bitbucket pauses the rest."
 externalLink = ""
 images = ["/images/LS2lziJFHP.png"]

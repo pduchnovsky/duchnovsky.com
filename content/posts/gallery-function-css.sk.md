@@ -1,6 +1,6 @@
 +++
 categories = ["navody"]
-date = 2020-11-11T23:00:00Z
+date = 2020-11-11T23:00:00
 description = "Len nedávno som hľadal spôsob, ako jednoducho (bez JS) vytvoriť stránku galérie pre svoje portfólio a vytvoril tento css z mnohých návodov na internete :)"
 externalLink = ""
 images = ["/images/example.KPaZ9hTQEh.jpg"]

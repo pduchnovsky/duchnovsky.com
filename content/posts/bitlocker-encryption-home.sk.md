@@ -1,6 +1,6 @@
 +++
 categories = ["guides"]
-date = 2020-10-02T23:00:00Z
+date = 2020-10-02T23:00:00
 description = "Ak spravujete IT infraštruktúru pre malé podniky alebo všeobecne Windows 10 Home, musíte nájsť spôsob, ako chrániť ich údaje a to aj na zariadeniach, ktorých súčasťou je systém Windows 10 Home."
 externalLink = ""
 images = ["/images/YLrR0Ok5p7.png"]

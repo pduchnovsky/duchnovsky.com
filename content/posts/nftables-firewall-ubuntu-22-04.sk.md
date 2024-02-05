@@ -1,6 +1,6 @@
 +++
 categories = ["linux", "navody", "skripty"]
-date = 2024-02-05T23:10:08Z
+date = 2024-02-05T23:10:08
 description = "Rýchle a jednoduché pravidlá firewallu pomocou nftables na blokovanie podľa geografickej polohy na Ubuntu 22.04"
 externalLink = ""
 images = ["/images/8s7dfas65f.png"]

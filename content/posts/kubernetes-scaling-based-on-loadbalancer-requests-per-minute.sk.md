@@ -1,6 +1,6 @@
 +++
 categories = ["navody", "scripty", "funkcie"]
-date = 2021-05-31T20:14:00Z
+date = 2021-05-31T20:14:00
 description = "Škálovanie kubernetes na základe rpm z lb je dosť nápomocné v niektorých situáciách ale potrebuje trocha dopilovať.."
 externalLink = ""
 images = ["/images/d77sdsadffs.png"]

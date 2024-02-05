@@ -1,6 +1,6 @@
 +++
 categories = ["skripty"]
-date = 2020-11-09T23:00:00Z
+date = 2020-11-09T23:00:00
 description = "Ak chcete, aby sa vaša stránka načítavala rýchlo a chcete získať pekné skóre na stránkach pagespeed, lighthouse alebo všeobecne.. musíte optimalizovať veľkosť svojich obrázkov."
 externalLink = ""
 images = ["/images/mnolwuduqt.png"]

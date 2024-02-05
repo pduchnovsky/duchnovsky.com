@@ -1,6 +1,6 @@
 +++
 categories = ["navody"]
-date = 2020-11-04T23:00:00Z
+date = 2020-11-04T23:00:00
 description = "Naposledy som skúsil generátory statických stránok dosť dávno.. pred niekoľkými rokmi, bol to vtedy strašný zážitok, ak mám byť úprimný .. tie časy sú už ale dávno preč."
 externalLink = ""
 images = ["/images/g3v56GPzfe.png"]

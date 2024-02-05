@@ -1,6 +1,6 @@
 +++
 categories = ["navody"]
-date = 2020-10-15T23:00:00Z
+date = 2020-10-15T23:00:00
 description = "Existuje niekoľko prípadov, keď by ste chceli premenovať niekoho užívateľský účet a priečinok s profilom a ja vám vysvetlím, ako to urobiť správne."
 externalLink = ""
 images = ["/images/ehO75Qfj6i.png"]

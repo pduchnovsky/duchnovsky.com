@@ -1,6 +1,6 @@
 +++
 categories = ["snippets", "navody"]
-date = 2020-11-11T23:00:00Z
+date = 2020-11-11T23:00:00
 description = "Hľadal som okolo ľahkú cestu k tomu, čo som sa snažil dosiahnuť .. ale nenašiel som to, tak som sa rozhodol, že si sám vytvorím hugo 'pipeline'"
 externalLink = ""
 images = ["/images/ue45Hl47oy.png"]

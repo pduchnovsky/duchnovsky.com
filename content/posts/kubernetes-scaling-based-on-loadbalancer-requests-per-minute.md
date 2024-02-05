@@ -1,6 +1,6 @@
 +++
 categories = ["guides", "scripts", "functions"]
-date = 2021-05-31T20:14:00Z
+date = 2021-05-31T20:14:00
 description = "Scaling based on lb rpm is something quite useful in some situations but needs some work.."
 externalLink = ""
 images = ["/images/d77sdsadffs.png"]

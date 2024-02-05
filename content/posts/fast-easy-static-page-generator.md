@@ -1,6 +1,6 @@
 +++
 categories = ["guides"]
-date = 2020-11-04T23:00:00Z
+date = 2020-11-04T23:00:00
 description = "The last time I tried static page generators was quite a while.. going years back, it was a terrible experience back then if I'm to be honest.. those times are long gone."
 externalLink = ""
 images = ["/images/g3v56GPzfe.png"]

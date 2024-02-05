@@ -1,6 +1,6 @@
 +++
 categories = []
-date = 2020-12-03T09:27:33Z
+date = 2020-12-03T09:27:33
 description = "JAMstack je moderná architektúra vývoja webu založená na klientskom JavaScript, API a obsahu napísanom vo formáte Markup. Generátory statických stránok úzko súvisia s architektúrou JAMstack, ktorá je sama o sebe iba skratkou. Prečo úzko súvisia ? Pretože bez nich by nebolo možné konkurovať dynamickému CMS."
 externalLink = ""
 images = ["/images/Mknql70lm3.png"]

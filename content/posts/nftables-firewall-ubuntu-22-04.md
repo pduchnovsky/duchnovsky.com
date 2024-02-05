@@ -1,6 +1,6 @@
 +++
 categories = ["linux", "guides", "scripts"]
-date = 2024-02-05T23:10:08Z
+date = 2024-02-05T23:10:08
 description = "Fast and simple firewall rules using nftables for Geo Blocking on Ubuntu 22.04"
 externalLink = ""
 images = ["/images/8s7dfas65f.png"]

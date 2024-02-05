@@ -1,6 +1,6 @@
 +++
 categories = ["guides"]
-date = 2020-11-18T21:09:02Z
+date = 2020-11-18T21:09:02
 description = "I know, I know.. this is what some themes are offering already but there is plenty that don't.. many outdated guides are not working and even I had problems finding proper solution."
 externalLink = ""
 images = ["/images/02lucMSbWk.png"]

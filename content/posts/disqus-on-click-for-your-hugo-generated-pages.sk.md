@@ -1,6 +1,6 @@
 +++
 categories = []
-date = 2020-11-18T21:09:02Z
+date = 2020-11-18T21:09:02
 description = "Viem, viem .. to už niektoré témy ponúkajú, ale existuje veľa takých, ktoré nie. Mnoho zastaraných sprievodcov nefunguje a dokonca som mal problémy s hľadaním správneho riešenia."
 externalLink = ""
 images = ["/images/02lucMSbWk.png"]

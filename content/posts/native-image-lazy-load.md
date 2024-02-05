@@ -1,6 +1,6 @@
 +++
 categories = ["snippets", "guides"]
-date = 2020-11-11T23:00:00Z
+date = 2020-11-11T23:00:00
 description = "I was looking around for an easy way to what I was trying to achieve.. but didn't find it, so I decided to create a pipe"
 externalLink = ""
 images = ["/images/ue45Hl47oy.png"]
