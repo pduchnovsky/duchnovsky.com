@@ -8,7 +8,7 @@ function FindProxyForURL(url, host) {
     shExpMatch(host, "*sktorrent.eu") ||
     shExpMatch(host, "*rutracker.org")
   )
-    return "PROXY 10.10.10.22:8888";
+    return "PROXY 10.10.10.2:8888; PROXY 10.10.10.22:8888";
   // Eveything else goes direct
   return "DIRECT";
 }
