@@ -35,7 +35,7 @@ posts = "/:year/:month/:slug/"
 [params]
 author = "Peter Duchnovsky"
 license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
-description = "...a drop in the ocean or a needle in a haystack ? | #coding, #devops, #automation, #multicloud, #infrastructure & #photography => Blog/Portfolio"
+description = "#IaC #coding, #devops, #automation, #multicloud, #infrastructure & #photography => Blog/Portfolio"
 keywords = "multicloud,cloud,programming,coding,system,administration,photography,portfolio,sysadmin,devops,engineer,engineering"
 info = "Senior DevOps Engineer"
 avatarURL = "/photo.png"
