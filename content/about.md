@@ -9,18 +9,17 @@ title = "About me"
 ![-](photos/pc.jpg "this is where the magic happens")
 
 {{< notice info >}}
-Most of my working time I spent in a private cloud area where over the years I moved between several different positions.
+Throughout my career, I have primarily focused on private cloud environments, transitioning through various roles over the years. I began as a **System Administrator**, responsible for managing storage and Unix systems. Later, I shifted to an **ICT Engineer** role, where I specialized in automation and script development. Subsequently, I took on the position of **Operation Manager** in the cloud deployment domain, ensuring operational efficiency and process enhancements.
 
-Starting as a **System Administrator** where I took care of storage and Unix systems, and later on moving to an **ICT Engineer** role where I was automating and developing scripts, then switching direction and working as an **Operation Manager** for cloud deployment area taking care of smoothness of operations and improving processes among of other things.  
-After some time I decided that wasn't for me and I decided to go back to my 'technical' roots, therefore I switched careers and started as a **DevOps Engineer** for a market research startup where I worked on automating and management of a platform that used GPU Accelerated Machine Learning.
+However, I eventually realized that my true passion lay in technical pursuits. Consequently, I made a career shift and joined a market research startup as a **DevOps Engineer**. In this role, I automated and managed a platform utilizing GPU Accelerated Machine Learning (ML/AI).
 
-I am currently working as a **Senior DevOps Engineer** for 'Full Stack' IT Services provider.
+Currently, I serve as a **Senior DevOps Engineer** at a ‘Full Stack’ IT Services provider.
 
-For my personal hobbies - I could say I am also a huge Nerd into computers, an **avid Gamer** and finally a **Hobbyist Photographer** with over 10 years of experience. When it comes to sports, I like to run and sometimes ski.
+Beyond my professional life, I am an avid computer enthusiast, a dedicated gamer, and a hobbyist photographer with over a decade of experience. In my leisure time, I enjoy running and occasionally skiing.
 
-At last, but not least, I am proud father :)
+Lastly, I take immense pride in being a father.
 
-This web serves as my blog / portfolio where I'll share some insights, guides, and some other stuff I might find worth sharing.
+This website serves as both my blog and portfolio, where I share insights, guides, and other valuable content.
 
-I hope you will find something that helps you here and go on with your life peacefully :)
+I hope you find something useful here 🌟
 {{< /notice >}}

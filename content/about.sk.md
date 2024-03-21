@@ -9,18 +9,17 @@ title = "O mne"
 ![-](photos/pc.jpg "tu čarujem")
 
 {{< notice info >}}
-Väčšinu svojho pracovného času som strávil v privátnej cloudovej oblasti, kde som sa v priebehu rokov pohyboval medzi niekoľkými rôznymi pozíciami.
+Počas svojej kariéry som sa zameriaval predovšetkým na oblasti súkromných cloudov, pričom som sa počas rokov presúval medzi rôznymi pozíciami. Začal som ako **systémový administrátor**, kde som sa staral o úložisko a Unixové systémy. Neskôr som prešiel na pozíciu **ICT inžinier**a, kde som sa špecializoval na automatizáciu a vývoj skriptov. Následne som prevzal pozíciu **manažér**a **prevádzky** v oblasti nasadenia do cloudu, kde som zabezpečoval plynulosť prevádzky a zlepšoval procesy.
 
-Začínal som ako **Systémový Administrátor**, kde som sa staral o úložné a linuxové systémy, neskôr som prešiel na pozíciu **Inžinier ICT**, kde som automatizoval a vyvíjal skripty, potom som skúsil iný smer a pracoval ako **Prevádzkový Manažér** pre oblasť cloudového deploymentu, kde som sa okrem iného staral o plynulosť prevádzky a zlepšovanie procesov.
-Po nejakom čase som si uvedomil, že to nie je pre mňa, a rozhodol sa vrátiť späť k svojim „technickým“ koreňom, preto som zmenil kariéru a začal som ako **DevOps Inžinier** pre startup prieskumu trhu, kde som pracoval na automatizácii a správe platformy, ktorá využívala GPU Accelerated Machine Learning.
+Avšak nakoniec som si uvedomil, že moja pravá vášeň spočíva v technických oblastiach. Preto som zmenil svoju kariéru a stal sa **DevOps inžinier**om v startupe zameranom na výskum trhu. V tejto funkcii som automatizoval a spravoval platformu využívajúcu GPU akcelerované strojové učenie (ML/AI).
 
-Aktuálne pracujem ako **Senior DevOps Inžinier** pre „Full Stack“ poskytovateľa IT služieb.
+Momentálne pracujem ako **Senior DevOps inžinier** pre poskytovateľa IT služieb „Full Stack“.
 
-Pre svoje osobné záľuby - môžem povedať, že som tiež obrovský Nerd do počítačov, **vášnivý hráč** a nakoniec **amatérsky fotograf** s 10 ročnými skúsenosťami. Čo sa týka športu, rád si zabehám a občas zalyžujem.
+Mimo pracovného života som vášnivý počítačový nadšenec, oddaný hráč videohier a amatérsky fotograf s viac ako desaťročnými skúsenosťami. Vo voľnom čase rád bežím a občas lyžujem.
 
-V neposlednom rade, som hrdý otec :)
+Nakoniec, ale nie najmenej, som hrdým otcom.
 
-Tento web slúži ako môj blog / portfólio, kde budem zdieľať nejaké postrehy, návody a nejaké ďalšie veci, ktoré by sa mohli hodiť na zdieľanie.
+Tento web slúži ako môj blog a portfólio, kde sa podelím o poznatky, návody a ďalší obsah, ktorý považujem za zdieľania hodný.
 
-Dúfam, že tu nájdete niečo, čo vám tu pomôže a budete pokojne pokračovať vo svojom živote :)
+Dúfam, že tu nájdete niečo užitočné 🌟
 {{< /notice >}}
