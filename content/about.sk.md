@@ -15,7 +15,7 @@ Avšak nakoniec som si uvedomil, že moja pravá vášeň spočíva v technický
 
 Momentálne pracujem ako **Senior DevOps inžinier** pre poskytovateľa IT služieb „Full Stack“.
 
-Mimo pracovného života som vášnivý počítačový nadšenec, oddaný hráč videohier a amatérsky fotograf s viac ako desaťročnými skúsenosťami. Vo voľnom čase rád bežím a občas lyžujem.
+Mimo pracovného života som vášnivý **nadšenec do počítačov**, veľmi sa zaujímam o **automatizáciu domácnosti** pomocou Home Assistant a ďalších nástrojov. Rád spravujem svoj malý domáci serverový a sieťový stack, pričom si sám **hostujem** niekoľko služieb na dvoch fyzických serveroch. Kedysi som bol oddaný **hráč**. Okrem toho som **fotografický nadšenec** s viac ako desaťročnými skúsenosťami. Vo voľnom čase sa rád venujem behu, cyklistike a občasnému lyžovaniu.
 
 Nakoniec, ale nie najmenej, som hrdým otcom.
 

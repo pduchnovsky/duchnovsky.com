@@ -15,7 +15,7 @@ However, I eventually realized that my true passion lay in technical pursuits. C
 
 Currently, I serve as a **Senior DevOps Engineer** at a ‘Full Stack’ IT Services provider.
 
-Beyond my professional life, I am an avid computer enthusiast, a dedicated gamer, and a hobbyist photographer with over a decade of experience. In my leisure time, I enjoy running and occasionally skiing.
+Beyond my professional life, I am an avid **computer enthusiast**, I'm very in to **home automation** using Home Assistant and other tools, I love managing my small servers and network stack while **selfhostng** several services spread over two physical servers, I used to be a dedicated **gamer**, and I am a hobbyist **photographer** with over a decade of experience. In my leisure time, I enjoy running, cycling and occasionally skiing.
 
 Lastly, I take immense pride in being a father.
 
