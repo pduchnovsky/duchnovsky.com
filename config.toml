@@ -100,13 +100,18 @@ weight = 2
 url = "portfolio/"
 
 [[languages.en.menu.main]]
-name = "About me"
+name = "HomeLab"
 weight = 3
+url = "homelab/"
+
+[[languages.en.menu.main]]
+name = "About me"
+weight = 4
 url = "about-me/"
 
 [[languages.en.menu.main]]
 name = "Email"
-weight = 4
+weight = 5
 url = "mailto:peter@duchnovsky.com"
 
 [languages.sk]
@@ -129,11 +134,16 @@ weight = 2
 url = "portfolio/"
 
 [[languages.sk.menu.main]]
-name = "O mne"
+name = "Laboratórium"
 weight = 3
+url = "laboratorium/"
+
+[[languages.sk.menu.main]]
+name = "O mne"
+weight = 4
 url = "o-mne/"
 
 [[languages.sk.menu.main]]
 name = "Email"
-weight = 4
+weight = 5
 url = "mailto:admin@duchnovsky.com"
