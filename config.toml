@@ -35,8 +35,8 @@ posts = "/:year/:month/:slug/"
 [params]
 author = "Peter Duchnovsky"
 license = '<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>'
-description = "#IaC #coding, #devops, #automation, #multicloud, #infrastructure & #photography => Blog/Portfolio"
-keywords = "multicloud,cloud,programming,coding,system,administration,photography,portfolio,sysadmin,devops,engineer,engineering"
+description = "#IaC, #coding, #devops, #automation, #homelab, #security, #multicloud, #infrastructure & #photography => Blog/Portfolio"
+keywords = "multicloud,cloud,homelab,programming,coding,system,administration,photography,portfolio,sysadmin,devops,engineer,engineering"
 info = "Senior DevOps Engineer"
 avatarURL = "/photo.png"
 footerContent = "“Trust Me ❤ I'm An Engineer”"
@@ -120,8 +120,8 @@ languageName = "🇸🇰"
 [languages.sk.params]
 author = "Peter Duchnovský"
 info = "DevOps Inžinier"
-description = "...kvapka v oceáne alebo ihla v kope sena ? | Blogovanie a portfólio o programovaní, správe systémov a fotografovaní"
-keywords = "programovanie, systém, správa, fotografia, portfólio sysadmin, devops, inžinier"
+description = "#IaC, #coding, #devops, #automation, #homelab, #security, #multicloud, #infrastructure & #photography => Blog/Portfolio"
+keywords = "multicloud,cloud,homelab,programovanie,kódovanie,systém,administrácia,fotografovanie,portfólio,sysadmin,devops,inžinier,inžinierstvo"
 
 [[languages.sk.menu.main]]
 name = "Blog"
