@@ -8,14 +8,13 @@ title = "HomeLab"
 ![-](photos/homelab.jpg "this is my playground")
 
 {{< notice info >}}
-This is my little HomeLab, which became essentially my main hobby in the recent years.  
-I love tinkering around and improving my setup, using mainly docker to host several services for myself and my family.  
-Running HomeAssistant for home automation which I fully set up myself for the entire house, such as automatic dehumidifier and heater for standalone garage, automatic house ventilation based on CO2 sensors, water leak detection and automatic water shut off, automation for external blinds, garage door automation, security and monitoring (7 cameras, house-wide alarm), zigbee power plugs and smoke detectors, BLE humidity and temperature sensors, ESPhome devices/sensors and BLE Proxies, IR blasters, some wifi plugs for garage, power monitoring, heat pump monitoring, etc.  
-My network stack consists of tp-link Omada devices due to easy manageability using Omada Controller as well as seamless integration and is separated simply - core, IoT and guest vlans, protected using stateful ACL rules in between them, as well as running proxy/relay for multicast between IoT and Core vlans so devices are discoverable by HomeAssistant :)  
-Running highly available Adguard Home for DNS queries and ads/tracking blocking.  
-Rocking 1000Mbit down and 500Mbit up connection via fiber 🤘  
+My HomeLab, a dedicated space for experimentation and technological exploration, has evolved into my primary hobby over the past few years. I derive immense satisfaction from fine-tuning and enhancing my setup, leveraging Docker to host an array of services for both personal use and family benefit.
 
-I just love it ❤️  :)
+At the heart of my HomeLab lies HomeAssistant, a meticulously configured home automation system that I personally established throughout my entire residence. Among its capabilities are automatic management of a dehumidifier and heater in the standalone garage, intelligent house ventilation based on CO2 sensor readings, water leak detection with automatic shutoff, automation for external blinds, garage door control, and comprehensive security and monitoring (including seven cameras and a house-wide alarm system). Additionally, I’ve integrated Zigbee power plugs, smoke detectors, BLE humidity and temperature sensors, ESPhome devices, BLE Proxies, IR blasters, and Wi-Fi plugs for the garage. My network architecture, composed of TP-Link Omada devices, ensures ease of management through the Omada Controller. It is thoughtfully segmented into core, IoT, and guest VLANs, safeguarded by stateful ACL rules. Furthermore, I’ve implemented a proxy/relay mechanism to facilitate multicast communication between IoT and Core VLANs, enabling seamless device discovery by HomeAssistant.
+
+For DNS queries and ad/tracking blocking, I maintain a highly available Adguard Home. And, as a testament to my passion for high-speed connectivity, I proudly enjoy a blazing 1000 Mbps download and 500 Mbps upload connection via fiber.
+
+In summary, my HomeLab is not just a technical playground; it’s an embodiment of my enthusiasm and commitment to technological excellence. ❤️
 {{< /notice >}}
 
 ![-](photos/hass.jpg "homeassistant dashboard")
