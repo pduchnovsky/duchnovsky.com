@@ -17,7 +17,7 @@ Momentálne pracujem ako **Senior DevOps inžinier** pre poskytovateľa IT služ
 
 Mimo pracovného života som vášnivý **nadšenec do počítačov**, veľmi sa zaujímam o **automatizáciu domácnosti** pomocou Home Assistant a ďalších nástrojov. Rád spravujem svoj malý domáci serverový a sieťový stack, pričom si sám **hostujem** niekoľko služieb na dvoch fyzických serveroch. Kedysi som bol oddaný **hráč**. Okrem toho som **fotografický nadšenec** s viac ako desaťročnými skúsenosťami. Vo voľnom čase sa rád venujem behu, cyklistike a občasnému lyžovaniu.
 
-Nakoniec, ale nie najmenej, som hrdým otcom.
+Nakoniec, som nesmierne hrdý na to, že som otcom dvoch najkrajších a najšikovnejších detí :)
 
 Tento web slúži ako môj blog a portfólio, kde sa podelím o poznatky, návody a ďalší obsah, ktorý považujem za zdieľania hodný.
 
