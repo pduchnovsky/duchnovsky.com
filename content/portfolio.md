@@ -1,7 +1,7 @@
 +++
 title= "Photography Portfolio"
 description = "pduchnovsky | Welcome to my Photography portfolio"
-images = ["photos/yjgiSb6ikk.png"]
+images = ["photos/photography.png"]
 +++
 
 ## Macro
