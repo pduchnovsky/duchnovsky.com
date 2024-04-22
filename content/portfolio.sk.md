@@ -1,7 +1,7 @@
 +++
 title= "Portfólio Fotografie"
 description = "pduchnovsky | Vitajte v mojom portfóliu Fotografie"
-images = ["photos/photography.png"]
+images = ["images/photography.png"]
 +++
 
 ## Makro

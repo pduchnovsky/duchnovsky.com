@@ -1,6 +1,6 @@
 +++
 description = "pduchnovsky | Niečo málo o mojom laboratóriu"
-images = ["photos/selfhosting.png"]
+images = ["images/selfhosting.png"]
 slug = "laboratorium"
 title = "Laboratórium"
 +++

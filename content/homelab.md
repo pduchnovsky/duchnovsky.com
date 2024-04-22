@@ -1,6 +1,6 @@
 +++
 description = "pduchnovsky | Something little about my homelab"
-images = ["photos/selfhosting.png"]
+images = ["images/selfhosting.png"]
 slug = "homelab"
 title = "HomeLab"
 +++
