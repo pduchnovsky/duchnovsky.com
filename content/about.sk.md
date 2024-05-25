@@ -11,9 +11,9 @@ title = "O mne"
 {{< notice info >}}
 Počas svojej kariéry som sa zameriaval predovšetkým na oblasti súkromných cloudov, pričom som sa počas rokov presúval medzi rôznymi pozíciami. Začal som ako **systémový administrátor**, kde som sa staral o úložisko a Unixové systémy. Neskôr som prešiel na pozíciu **ICT inžinier**a, kde som sa špecializoval na automatizáciu a vývoj skriptov. Následne som prevzal pozíciu **manažér**a **prevádzky** v oblasti nasadenia do cloudu, kde som zabezpečoval plynulosť prevádzky a zlepšoval procesy.
 
-Avšak nakoniec som si uvedomil, že moja pravá vášeň spočíva v technických oblastiach. Preto som zmenil svoju kariéru a stal sa **DevOps inžinier**om v startupe zameranom na výskum trhu. V tejto funkcii som automatizoval a spravoval platformu využívajúcu GPU akcelerované strojové učenie (ML/AI).
+Avšak nakoniec som si uvedomil, že moja pravá vášeň spočíva v technických oblastiach. Preto som zmenil svoju kariéru a stal sa **DevOps inžinier**om v startupe zameranom na výskum trhu. V tejto funkcii som automatizoval a spravoval platformu využívajúcu GPU akcelerované strojové učenie (ML/AI). Následne som pracoval ako **Senior DevOps inžinier** pre poskytovateľa IT služieb.
 
-Momentálne pracujem ako **Senior DevOps inžinier** pre poskytovateľa IT služieb „Full Stack“.
+Čoskoro začínam ako **Site Reliability Engineer** v bankovom sektore :)
 
 Mimo pracovného života som vášnivý **nadšenec do počítačov**, veľmi sa zaujímam o **automatizáciu domácnosti** pomocou Home Assistant a ďalších nástrojov. Rád spravujem svoj malý domáci serverový a sieťový stack, pričom si sám **hostujem** niekoľko služieb na dvoch fyzických serveroch. Kedysi som bol oddaný **hráč**. Okrem toho som **fotografický nadšenec** s viac ako desaťročnými skúsenosťami. Vo voľnom čase sa rád venujem behu, cyklistike a občasnému lyžovaniu.
 
