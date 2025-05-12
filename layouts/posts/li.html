@@ -1,0 +1,53 @@
+<li>
+  <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
+    {{ if .Site.Params.enablePostImg }}
+    {{ $src := "" }}
+    {{- with .Params.images -}}
+      {{ $src = index (.) 0 }}
+    {{ else -}}
+      {{- with .Site.Params.images -}}
+        {{ $src = index (.) 0 }}
+      {{- end -}}
+    {{- end }}
+    {{ $img := "" }}
+    {{ $imgPath := add "/content" $src }}
+    {{ if fileExists $imgPath }}
+        {{ $img = imageConfig $imgPath }}
+    {{ else }}
+        {{ $imgPath = add "/static" $src }}
+        {{ if fileExists $imgPath }}
+            {{ $img = imageConfig $imgPath }}
+        {{ end }}
+    {{ end }}
+
+    {{ if $img }}
+        <figure>
+          <div class="postimg">
+            <img
+            src="{{ $src }}"
+            alt="article image"
+            loading="lazy"
+            width="{{ $img.Width }}"
+            height="{{ $img.Height }}"
+            />
+          </div>
+        </figure>
+    {{ end }}
+    {{ end }}
+  </span>
+  {{ if not .Site.Params.enablePostImg }}
+  <br>
+  {{ end }}
+  <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">
+    {{ .Title }}
+    {{ if .Site.Params.enablePostSummary }}
+      {{ if gt (len .Summary) 0 }}
+        <p class="summary">
+          {{ plainify .Summary | truncate 250 }} <i class="fa fa-terminal" aria-hidden="true"></i>
+        </p>
+      {{ else }}
+       <br><br>
+      {{ end }}
+    {{ end }}
+  </a>
+</li>

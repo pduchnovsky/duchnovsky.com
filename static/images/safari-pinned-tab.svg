@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<title>favicon</title>
+	<style>
+		tspan { white-space:pre } 
+		.s0 { fill: #000000 } 
+		.t1 { font-size: 57px;fill: #ffffff;font-weight: 400;font-family: "ArialMT", "Arial" } 
+	</style>
+	<path id="Shape 1" class="s0" d="m477.8 34.2q-27.5-27.4-66.1-27.4h-311.4q-38.6 0-66.1 27.4-27.4 27.5-27.4 66.1v311.4q0 38.6 27.4 66.1 27.5 27.4 66.1 27.4h311.4q38.6 0 66.1-27.4 27.4-27.5 27.4-66.1v-311.4q0-38.6-27.4-66.1z"/>
+	<text id="pd " style="transform: matrix(5.12,0,0,5.12,95.808,331.733)" >
+		<tspan x="0" y="0" class="t1">p</tspan><tspan  y="0" class="t1">d
+</tspan>
+	</text>
+</svg>

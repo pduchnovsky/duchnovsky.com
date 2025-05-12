@@ -1,0 +1,25 @@
+<!-- layouts/_default/_markup/render-image.html -->
+<!-- Developed/Adapted by pduchnovsky, https://duchnovsky.com/2020/11/native-image-lazy-load/ -->
+
+{{ $img := "" }}{{ $thumb := "" }}{{ $srcset := slice }} {{ $src := (
+.Destination | safeURL ) }} {{ $alt := .PlainText }} {{ $caption := .Title |
+safeHTML }} {{ $imgPath := add "/content" $src }} {{ if fileExists $imgPath }}
+{{ $img = imageConfig $imgPath }} {{ else }} {{ $imgPath = add "/static" $src }}
+{{ if fileExists $imgPath }} {{ $img = imageConfig $imgPath }} {{ end }} {{ end
+}} {{ if not $img }} {{ with resources.Get .Destination }} {{ $src = (. |
+fingerprint).RelPermalink }} {{ $img = . }} {{ $sizes := slice 500 800 1200 }}
+{{ range $sizes }} {{ if and (le (mul . 1) $img.Width) }} {{ $thumb =
+$img.Resize (printf "%dx CatmullRom" .) }} {{ $srcset = $srcset | append (printf
+("%s %dw") $thumb.RelPermalink . ) }} {{ end }} {{ end }} {{ end }} {{ end }} {{
+if $img }}
+<figure>
+  <img src="{{ $src }}" alt="{{ if $alt }}{{ $alt }}{{ else if $caption }}{{
+  $caption | markdownify | plainify }}{{ else }}&nbsp;{{ end }}" loading="lazy"
+  {{ if gt (len $srcset) 0 }} srcset="{{ (delimit $srcset ", " | safeHTMLAttr)
+  }}" {{ if in .Text "_gallery" }} sizes="25vw" {{ else }} sizes="100vw" {{end}}
+  width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" {{ else }} width="{{
+  $img.Width }}" height="{{ $img.Height }}" {{ end }} /> {{ with $caption }}
+  <figcaption>{{ . | markdownify }}</figcaption>
+  {{ end }}
+</figure>
+{{ end }}
