@@ -57,7 +57,7 @@ maxSeeAlsoItems = 5
 enableTwemoji = false
 
 [params.utterances]
-repo = "https://github.com/pduchnovsky/duchnovsky.com"
+repo = "pduchnovsky/duchnovsky.com"
 issueTerm = "pathname"
 label = "comment"
 theme = "preferred-color-scheme"
@@ -66,11 +66,11 @@ theme = "preferred-color-scheme"
 childsrc = ["'self'"]
 fontsrc = ["'self'"]
 formaction = ["'self'"]
-framesrc = ["'self'"]
+framesrc = ["'self'", "https://utteranc.es"]
 imgsrc = ["'self'", "https://www.gravatar.com"]
 objectsrc = ["'none'"]
 stylesrc = ["'self'", "'unsafe-inline'"]
-scriptsrc = ["'self'", "'unsafe-inline'"]
+scriptsrc = ["'self'", "'unsafe-inline'", "https://utteranc.es"]
 prefetchsrc = ["'self'"]
 connectsrc = ["'self'"]
 
