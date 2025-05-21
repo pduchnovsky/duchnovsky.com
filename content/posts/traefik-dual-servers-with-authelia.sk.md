@@ -78,6 +78,7 @@ services:
       - TZ=Europe/Amsterdam
       - X_AUTHELIA_CONFIG_FILTERS=template
       - TRAEFIK_DOMAIN=${TRAEFIK_DOMAIN}
+      - REDIS_PASS=${REDIS_PASS}
     labels:
       - traefik.enable=true
       - traefik.docker.network=auth
@@ -89,6 +90,19 @@ services:
     volumes:
       - /volume1/docker/auth/secrets:/secrets:ro
       - /volume1/docker/auth/config:/config
+    restart: always
+
+  auth-redis:
+    image: redis:alpine
+    container_name: auth-redis
+    user: 1337:1337
+    networks:
+      - auth
+    security_opt:
+      - no-new-privileges:true
+    command: redis-server --requirepass "${REDIS_PASS}"
+    volumes:
+      - /volume1/docker/auth-redis:/data
     restart: always
 
 networks:
@@ -186,6 +200,10 @@ session:
   cookies:
     - domain: '{{ env "TRAEFIK_DOMAIN" }}'
       authelia_url: 'https://auth.{{ env "TRAEFIK_DOMAIN" }}'
+  redis:
+    host: auth-redis
+    port: 6379
+    password: '{{ env "REDIS_PASS" }}'
 
 regulation:
   max_retries: 4
