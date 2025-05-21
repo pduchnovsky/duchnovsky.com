@@ -56,6 +56,12 @@ hideColorSchemeToggle = false
 maxSeeAlsoItems = 5
 enableTwemoji = false
 
+[params.utterances]
+repo = "https://github.com/pduchnovsky/duchnovsky.com"
+issueTerm = "pathname"
+label = "comment"
+theme = "preferred-color-scheme"
+
 [params.csp]
 childsrc = ["'self'"]
 fontsrc = ["'self'"]
