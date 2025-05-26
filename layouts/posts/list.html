@@ -1,36 +1,70 @@
 {{ define "title" }}
-  {{ title (i18n (lower .Title)) | default .Title }} · {{ .Site.Title }}
+  {{/* Use i18n directly on the title for better translation if available, otherwise fallback to the original title */}}
+  {{ if (i18n (lower .Title)) }}
+    {{ i18n (lower .Title) | title }} · {{ .Site.Title }}
+  {{ else }}
+    {{ .Title }} · {{ .Site.Title }}
+  {{ end }}
 {{ end }}
+
 {{ define "content" }}
   <section class="container list">
     <header>
       <h1 class="title">
         <a class="title-link" href="{{ .Permalink | safeURL }}">
-          {{ title (i18n (lower .Title)) | default .Title }}
+          {{/* Consistent title rendering with i18n fallback */}}
+          {{ if (i18n (lower .Title)) }}
+            {{ i18n (lower .Title) | title }}
+          {{ else }}
+            {{ .Title }}
+          {{ end }}
         </a>
       </h1>
     </header>
-    {{ .Content }}
-    <ul>
-      {{- range .Paginator.Pages -}}
-        {{- .Render "li" -}}
-      {{- end -}}
-    </ul>
 
-    {{ partial "pagination.html" . }}
-    <ul>
-      <b>All Categories & Tags:</b>
-      <div>
-        <i class="fa fa-folder" aria-hidden="true"></i>&nbsp
-        {{ range .Site.Taxonomies.categories }}
-          <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
-        {{ end }}
-        <br>
-        <i class="fa fa-tag" aria-hidden="true"></i>&nbsp
-        {{ range .Site.Taxonomies.tags }}
-          <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> ({{ .Count }})
-        {{ end }}
+    {{/* Render page content (e.g., introduction for a category page) */}}
+    {{ with .Content }}
+      <div class="content">
+        {{ . }}
       </div>
-    </ul>
+    {{ end }}
+
+    {{/* List the pages (articles/posts) within this list context */}}
+    {{ if .Paginator.Pages }}
+      <ul class="posts-list">
+        {{ range .Paginator.Pages }}
+          {{ .Render "li" }} {{/* Assumes "li" layout for single posts */}}
+        {{ end }}
+      </ul>
+      {{ partial "pagination.html" . }}
+    {{ else }}
+      <p>{{ i18n "noContent" | default "No content found here yet." }}</p>
+    {{ end }}
+
+    {{/* Display categories and tags with conditional rendering */}}
+    <div class="taxonomy-overview">
+      <b>{{ i18n "allCategoriesTags" | default "All Categories & Tags:" }}</b>
+      {{ if or .Site.Taxonomies.categories .Site.Taxonomies.tags }}
+        {{ with .Site.Taxonomies.categories }}
+          <div class="taxonomy-group">
+            <i class="fa fa-folder" aria-hidden="true"></i>&nbsp;
+            {{ range $name, $taxonomy := . }}
+              <a href="{{ $taxonomy.Page.Permalink }}" title="{{ $name | title }}">{{ $name | title }}</a> ({{ $taxonomy.Count }})
+            {{ end }}
+          </div>
+        {{ end }}
+
+        {{ with .Site.Taxonomies.tags }}
+          <div class="taxonomy-group">
+            <i class="fa fa-tag" aria-hidden="true"></i>&nbsp;
+            {{ range $name, $taxonomy := . }}
+              <a href="{{ $taxonomy.Page.Permalink }}" title="{{ $name | title }}">{{ $name | title }}</a> ({{ $taxonomy.Count }})
+            {{ end }}
+          </div>
+        {{ end }}
+      {{ else }}
+        <p>{{ i18n "noTaxonomies" | default "No categories or tags defined yet." }}</p>
+      {{ end }}
+    </div>
   </section>
 {{ end }}

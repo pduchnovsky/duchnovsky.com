@@ -10,7 +10,7 @@ buildFuture = true
 buildExpired = true
 
 [pagination]
-pagerSize = 5
+pagerSize = 10
 
 [sitemap]
 changefreq = "monthly"
@@ -53,7 +53,7 @@ images = ["/thumb.png"]
 rtl = false
 colorScheme = "auto"
 hideColorSchemeToggle = false
-maxSeeAlsoItems = 5
+maxSeeAlsoItems = 10
 enableTwemoji = false
 
 [params.utterances]

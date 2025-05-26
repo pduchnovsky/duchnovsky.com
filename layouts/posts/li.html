@@ -1,38 +1,62 @@
 <li>
   <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
     {{ if .Site.Params.enablePostImg }}
-    {{ $src := "" }}
-    {{- with .Params.images -}}
-      {{ $src = index (.) 0 }}
-    {{ else -}}
-      {{- with .Site.Params.images -}}
-        {{ $src = index (.) 0 }}
-      {{- end -}}
-    {{- end }}
-    {{ $img := "" }}
-    {{ $imgPath := add "/content" $src }}
-    {{ if fileExists $imgPath }}
-        {{ $img = imageConfig $imgPath }}
-    {{ else }}
-        {{ $imgPath = add "/static" $src }}
-        {{ if fileExists $imgPath }}
-            {{ $img = imageConfig $imgPath }}
-        {{ end }}
-    {{ end }}
+      {{ $rawImagePath := "" }}
+      {{ $img := "" }}
+      {{ $staticImgSrc := "" }}
 
-    {{ if $img }}
+      {{ with .Params.images }}
+        {{ $rawImagePath = index . 0 }}
+      {{ else }}
+        {{ with .Site.Params.images }}
+          {{ $rawImagePath = index . 0 }}
+        {{ end }}
+      {{ end }}
+
+      {{ if $rawImagePath }}
+        {{ $assetPathCandidate := "" }}
+        {{ if hasPrefix $rawImagePath "images/" }}
+          {{ $assetPathCandidate = $rawImagePath }}
+        {{ else if hasPrefix $rawImagePath "/" }}
+          {{ $assetPathCandidate = strings.TrimPrefix "/" $rawImagePath }}
+        {{ else }}
+          {{ $assetPathCandidate = printf "images/%s" $rawImagePath }}
+        {{ end }}
+
+        {{ with resources.Get $assetPathCandidate }}
+          {{ $img = . }}
+        {{ else }}
+          {{ if hasPrefix $rawImagePath "/" }}
+            {{ $staticImgSrc = $rawImagePath }}
+          {{ end }}
+        {{ end }}
+      {{ else }}
+        {{ $staticImgSrc = "/thumb.png" }} {{/* Set your default static image path here */}}
+      {{ end }}
+
+      {{ if $img }}
         <figure>
           <div class="postimg">
             <img
-            src="{{ $src }}"
-            alt="article image"
-            loading="lazy"
-            width="{{ $img.Width }}"
-            height="{{ $img.Height }}"
+              src="{{ $img.RelPermalink }}"
+              alt="{{ .Title | default "article image" }}"
+              loading="lazy"
+              width="{{ $img.Width }}"
+              height="{{ $img.Height }}"
             />
           </div>
         </figure>
-    {{ end }}
+      {{ else if $staticImgSrc }}
+        <figure>
+          <div class="postimg">
+            <img
+              src="{{ $staticImgSrc | safeURL }}"
+              alt="{{ .Title | default "article image" }}"
+              loading="lazy"
+            />
+          </div>
+        </figure>
+      {{ end }}
     {{ end }}
   </span>
   {{ if not .Site.Params.enablePostImg }}

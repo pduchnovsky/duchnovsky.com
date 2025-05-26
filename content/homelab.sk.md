@@ -5,7 +5,7 @@ slug = "homelab"
 title = "HomeLab"
 +++
 
-![-](photos/homelab.jpg "toto je moje ihrisko")
+![-](images/homelab.jpg "toto je moje ihrisko")
 
 {{< notice info >}}
 Môj homelab, vyhradený priestor na experimentovanie a technologické skúmanie, sa za posledných pár rokov stal mojím hlavným koníčkom. Mám obrovskú spokojnosť z dolaďovania a vylepšovania môjho setupu a využívam Docker na hosťovanie množstva služieb pre osobné použitie aj pre rodinu.
@@ -21,4 +21,4 @@ Môj docker-compose.yml súbor má momentálne viac ako 550 riadkov a čoskoro i
 Stručne povedané, môj HomeLab nie je len technické ihrisko; je stelesnením môjho nadšenia a záväzku k technologickej dokonalosti. ❤️
 {{< /notice >}}
 
-![-](photos/hass.jpg "homeassistant dashboard")
+![-](images/hass.jpg "homeassistant dashboard")

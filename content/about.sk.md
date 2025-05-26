@@ -6,7 +6,7 @@ title = "O mne"
 
 +++
 
-![-](photos/pc.jpg "tu čarujem")
+![-](images/pc.jpg "tu čarujem")
 
 {{< notice info >}}
 Počas svojej kariéry som sa zameriaval predovšetkým na oblasti súkromných cloudov, pričom som sa počas rokov presúval medzi rôznymi pozíciami. Začal som ako **systémový administrátor**, kde som sa staral o úložisko a Unixové systémy. Neskôr som prešiel na pozíciu **ICT inžinier**a, kde som sa špecializoval na automatizáciu a vývoj skriptov. Následne som prevzal pozíciu **manažér**a **prevádzky** v oblasti nasadenia do cloudu, kde som zabezpečoval plynulosť prevádzky a zlepšoval procesy.
