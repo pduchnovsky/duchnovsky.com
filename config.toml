@@ -140,9 +140,9 @@ weight = 2
 url = "portfolio/"
 
 [[languages.sk.menu.main]]
-name = "Laboratórium"
+name = "HomeLab"
 weight = 3
-url = "laboratorium/"
+url = "homelab/"
 
 [[languages.sk.menu.main]]
 name = "O mne"
