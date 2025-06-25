@@ -152,4 +152,4 @@ url = "o-mne/"
 [[languages.sk.menu.main]]
 name = "Email"
 weight = 5
-url = "mailto:admin@duchnovsky.com"
+url = "mailto:peter@duchnovsky.com"
