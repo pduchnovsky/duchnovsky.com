@@ -9,17 +9,17 @@ title = "O mne"
 ![-](images/pc.jpg "tu čarujem")
 
 {{< notice info >}}
-Počas svojej kariéry som sa zameriaval predovšetkým na oblasti súkromných cloudov, pričom som sa počas rokov presúval medzi rôznymi pozíciami. Začal som ako **systémový administrátor**, kde som sa staral o úložisko a Unixové systémy. Neskôr som prešiel na pozíciu **ICT inžinier**a, kde som sa špecializoval na automatizáciu a vývoj skriptov. Následne som prevzal pozíciu **manažér**a **prevádzky** v oblasti nasadenia do cloudu, kde som zabezpečoval plynulosť prevádzky a zlepšoval procesy.
+Počas svojej kariéry som sa špecializoval najmä na oblasť **súkromných cloudov**, pričom som prešiel viacerými technickými aj manažérskymi pozíciami. Začínal som ako **systémový administrátor**, kde som sa staral o úložiská a Unixové systémy. Neskôr som prešiel na pozíciu **ICT inžiniera**, kde som sa venoval **automatizácii** a vývoju skriptov. Postupne som sa posunul na rolu **manažéra prevádzky** v oblasti cloudových nasadení, kde som zabezpečoval stabilitu prevádzky a zlepšoval interné procesy.
 
-Avšak nakoniec som si uvedomil, že moja pravá vášeň spočíva v technických oblastiach. Preto som zmenil svoju kariéru a stal sa **DevOps inžinier**om v startupe zameranom na výskum trhu. V tejto funkcii som automatizoval a spravoval platformu využívajúcu GPU akcelerované strojové učenie (ML/AI). Následne som pracoval ako **Senior DevOps inžinier** pre poskytovateľa IT služieb a pracoval na mnohých projektoch vo verejnom cloude.
+Časom som však pochopil, že ma najviac napĺňa samotná **technická práca**. Preto som sa rozhodol zmeniť smer a stal sa **DevOps inžinierom** v startupe zameranom na **výskum trhu**. V tejto pozícii som automatizoval a spravoval platformu využívajúcu **GPU akcelerované strojové učenie (ML/AI)**. Následne som pracoval ako **Senior DevOps inžinier** pre poskytovateľa IT služieb, kde som sa podieľal na viacerých projektoch postavených na **verejnom cloude**.
 
-Aktuálne pracujem ako **Site Reliability Engineer** v bankovom sektore :)
+Aktuálne pracujem ako **Site Reliability Engineer** v **bankovom sektore** :)
 
-Mimo pracovného života som vášnivý **nadšenec do počítačov**, veľmi sa zaujímam o **automatizáciu domácnosti** pomocou Home Assistant a ďalších nástrojov. Rád spravujem svoj malý domáci serverový a sieťový stack, pričom si sám **hostujem** niekoľko služieb na dvoch fyzických serveroch. Kedysi som bol oddaný **hráč**. Okrem toho som **fotografický nadšenec** s viac ako desaťročnými skúsenosťami. Vo voľnom čase sa rád venujem behu, cyklistike a občasnému lyžovaniu.
+Mimo práce som vášnivý **nadšenec do technológií**. Zaujímam sa o **automatizáciu domácnosti** (najmä pomocou Home Assistant a ďalších nástrojov), a vo voľnom čase si spravujem svoj **domáci serverový a sieťový stack**. Na dvoch fyzických serveroch si **sám hostujem** viacero služieb. Kedysi som bol oddaný **hráč**, dnes sa viac venujem **fotografii** (s viac ako desaťročnými skúsenosťami), **behu**, **cyklistike** a príležitostnému **lyžovaniu**.
 
-Nakoniec, som nesmierne hrdý na to, že som otcom dvoch najkrajších a najšikovnejších detí :)
+A čo je pre mňa najdôležitejšie – som hrdý otec dvoch **výnimočných detí**, ktoré sú mojou najväčšou inšpiráciou :)
 
-Tento web slúži ako môj blog a portfólio, kde sa podelím o poznatky, návody a ďalší obsah, ktorý považujem za zdieľania hodný.
+Tento web slúži ako môj **blog a portfólio**, kde sa delím o poznatky, návody a rôzny obsah, ktorý považujem za hodný zdieľania.
 
-Dúfam, že tu nájdete niečo užitočné 🌟
+**Dúfam, že tu nájdete niečo užitočné 🌟**
 {{< /notice >}}
