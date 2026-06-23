@@ -110,11 +110,6 @@ weight = 3
 url = "homelab/"
 
 [[languages.en.menu.main]]
-name = "About me"
-weight = 4
-url = "about-me/"
-
-[[languages.en.menu.main]]
 name = "Email"
 weight = 5
 url = "mailto:peter@duchnovsky.com"
@@ -143,11 +138,6 @@ url = "portfolio/"
 name = "HomeLab"
 weight = 3
 url = "homelab/"
-
-[[languages.sk.menu.main]]
-name = "O mne"
-weight = 4
-url = "o-mne/"
 
 [[languages.sk.menu.main]]
 name = "Email"
