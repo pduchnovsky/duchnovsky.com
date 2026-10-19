@@ -55,6 +55,7 @@ colorScheme = "auto"
 hideColorSchemeToggle = false
 maxSeeAlsoItems = 10
 enableTwemoji = false
+customSCSS = ["scss/_gallery.scss", "scss/_highlight.scss", "scss/_custom.scss"]
 
 [params.utterances]
 repo = "pduchnovsky/duchnovsky.com"
